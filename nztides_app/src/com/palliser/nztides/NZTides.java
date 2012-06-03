@@ -79,14 +79,19 @@ public class NZTides extends Activity {
 		AssetManager am = getAssets();
 		StringBuffer outstring =  new StringBuffer("");
 	        
-		//int nrecs=0;
+		int num_rows=8;
+	    int num_cols=34;
 		int t = 0,told;
 		float h=0;
 		float hold;
 		Date now = new Date();
 		int nowsecs = (int)(now.getTime()/1000);
-		int lasttide;//time of lasttide in datafile
-//	    int records_read;    
+		int lasttide;
+		char [][] graph = new char[num_rows][num_cols+1];
+		
+
+		
+		
 	    try {
 	    	DataInputStream tidedat = new DataInputStream(am.open(port+".tdat",1));
 	    	String stationname = tidedat.readLine();
@@ -116,8 +121,10 @@ public class NZTides extends Activity {
 	        DecimalFormat  nformat2 = new DecimalFormat("0.00");
 	        DecimalFormat  nformat3 = new DecimalFormat("00");
 	        DecimalFormat  nformat4 = new DecimalFormat(" 0.0;-0.0");
+	        //SimpleDateFormat dformat = new SimpleDateFormat(
+	        //    	"HH:mm E dd-MM-yyyy zzz");
 	        SimpleDateFormat dformat = new SimpleDateFormat(
-	            	"HH:mm E dd-MM-yyyy zzz");
+	            	"HH:mm E dd/MM/yy zzz");
 	        //parameters of cosine wave used to interpolate between tides
 	        //We assume that the tides vaires cosinusoidally
 	        //between the last tide and the next one
@@ -125,7 +132,32 @@ public class NZTides extends Activity {
 	        double omega = 2*Math.PI/((t-told)*2); 
 	        double amp = (hold - h)/2;
 	        double mn = (h+hold)/2;
-	            
+	        double x,phase;
+     
+	        // make ascii art plot
+	        
+			for(int k=0;k<num_rows;k++){
+				for(int j=0;j<num_cols;j++){
+					graph[k][j]=' ';
+				}
+				graph[k][num_cols]='\n';
+			}
+	        
+	        for(int k=0;k<num_cols;k++){
+	        	x = ( 1.0+(hold>h?-1:1)*Math.sin( k * 2 * Math.PI / (num_cols-1) ) ) / 2.0;
+	        	x = ( (num_rows-1) * x + 0.5 );
+	        	graph[(int)x][k]='*';
+	        	//graph[k%num_rows][k]='*';
+		        }	
+	        
+	        phase = omega*(nowsecs-told);
+	        x = (phase+Math.PI/2)/(2.0*Math.PI);
+		    x = ( (num_cols-1) * x + 0.5 );
+		    for(int j=0;j<num_rows;j++){
+		    	graph[j][(int)x]='|';
+		    }
+	       
+	        
 	        double currentht = amp*Math.cos(omega*(nowsecs-told))+mn;
 	        double riserate =  -amp*omega*Math.sin(omega*(nowsecs-told))*60*60;
 	            
@@ -139,20 +171,60 @@ public class NZTides extends Activity {
 	           
 	        outstring.append(nformat2.format(Math.abs(riserate))+ "m/hr\n");
 	        outstring.append("---------------\n");
-	        int num_minutes=(int)((nowsecs-told)/(60));
-	        outstring.append("Last tide " + hold + "m,    "+num_minutes/60  + "h" +nformat3.format(num_minutes%60) +"m ago\n");
-	        num_minutes=(int)((t -nowsecs)/(60));
-	        outstring.append("Next tide " + h + "m, in " +num_minutes/60  + "h" +nformat3.format(num_minutes%60) +"m\n"); 
-
+	        
+	        int time_to_previous= (nowsecs-told);
+	        int time_to_next = (t-nowsecs);
+	        boolean hightidenext=(h>hold);
+	        
+	        if(time_to_previous<time_to_next){
+	        	if(hightidenext){
+	        		outstring.append("Low tide ("+hold+"m) " + (int)(time_to_previous/3600) +
+	        					"h" +  nformat3.format( (int)(time_to_previous/60) % 60) + "m ago\n");
+	        	} else {
+	        		outstring.append("High tide ("+hold+"m) " + (int)(time_to_previous/3600) +
+        					"h" +  nformat3.format( (int)(time_to_previous/60) % 60) + "m ago\n");
+	        	}
+	        } else {
+	        	if(hightidenext){
+	        		outstring.append("High tide ("+h+"m) in " + (int)(time_to_next/3600) +
+	        					"h" +  nformat3.format( (int)(time_to_next/60) % 60) + "m\n");
+	        	} else {
+	        		outstring.append("Low tide ("+h+"m) in " + (int)(time_to_next/3600) +
+        					"h" +  nformat3.format( (int)(time_to_next/60) % 60) + "m\n");
+	        	}
+	        	
+	        }
+	        //outstring.append("---------------\n");
+	        //int num_minutes=(int)((nowsecs-told)/(60));
+	        //outstring.append("Last tide " + hold + "m,    "+num_minutes/60  + "h" +nformat3.format(num_minutes%60) +"m ago\n");
+	        //num_minutes=(int)((t -nowsecs)/(60));
+	        //outstring.append("Next tide " + h + "m, in " +num_minutes/60  + "h" +nformat3.format(num_minutes%60) +"m\n"); 
 	        outstring.append("---------------\n");
+	        
+	    	for(int k=0;k<num_rows;k++){
+				for(int j=0;j<num_cols+1;j++){
+					outstring.append(graph[k][j]);
+				}
+			}
+	        
+	    	outstring.append("---------------\n");
+	        
+	        
+	        
+	        
+	        
+	        
 
-	            outstring.append(nformat1.format(hold)+" "+dformat.format( new Date(1000*(long)told))+'\n'); 
-	            outstring.append(nformat1.format(h)+" "+dformat.format(new Date(1000*(long)t))+'\n');
+       	 	hightidenext = !hightidenext;
+       	 	outstring.append(nformat1.format(hold)+(hightidenext?" H ":" L ")+dformat.format( new Date(1000*(long)told))+'\n'); 
+       	 	hightidenext = !hightidenext;
+	        outstring.append(nformat1.format(h)+(hightidenext?" H ":" L ")+dformat.format(new Date(1000*(long)t))+'\n');
 	            
 	            for(int k=0;k<30*4;k++){
+	            	 hightidenext = !hightidenext;
 	            	  t = swap(tidedat.readInt());
 	                  h = (float) (tidedat.readByte())/(float)(10.0);
-	                  outstring.append(nformat1.format(h)+" "+dformat.format(new Date(1000*(long)t))+'\n');
+	                  outstring.append(nformat1.format(h)+(hightidenext?" H ":" L ")+dformat.format(new Date(1000*(long)t))+'\n');
 	            }
 	            outstring.append("The last tide in this datafile occurs at:\n");
 	            outstring.append(dformat.format(new Date(1000*(long)lasttide)));
