@@ -22,9 +22,14 @@ for port in ports:
     print "Starting: " + port
 
 
-    for i in [2012,2013]:
-        
-        fp = open("%s/%d.csv"%(port,i),'r')
+    for i in [2012,2013,2014]:
+        try:
+            fp = open("%s/%d.csv"%(port,i),'r')
+        except IOError:
+            print "couldn't open \"%s/%d.csv\", assuming we dont have any more data for %s"%(port,i,port)
+            break
+
+            
         print fp.readline().strip().split(',')[1], port #these should be the same
         print fp.readline().strip().split(',')[1]
         #print 
@@ -54,18 +59,20 @@ for port in ports:
                 
     of = open('%s.tdat'%(port,),'w')
     print "writing %s.dat"%(port,)
-    print "-------------------------------"
     #first line of tdat file is the port name
     of.write('[%s]\n'%(string.capwords(port),))
     #then an integer representing the date of the last tide
     of.write(struct.pack('i',times[-1]))
+    print "the last time in this datafile will be " + time.asctime(time.localtime(times[-1]))
     #then an integer representing the number of records
     of.write(struct.pack('i',len(hts)))
+    print " the number of tide records is %d, which is about %g years worth"%(len(hts),len(hts)/(4.0*365))
     #then for each record an integer valued time and a byte representing the height in decimeters
     for k in range(len(hts)):
         of.write(struct.pack('ib',times[k],int(round(hts[k]*10))))
-    #    print time.asctime(time.localtime(times[k]))
+        #print time.asctime(time.localtime(times[k]))
     of.close()
-            
+    print "-------------------------------"
+        
 
 #test
