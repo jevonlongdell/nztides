@@ -1,0 +1,68 @@
+Starting: auckland
+Auckland auckland
+01-Jan-2012
+Auckland auckland
+01-Jan-2013
+writing auckland.dat
+-------------------------------
+Starting: bluff
+Bluff bluff
+01-Jan-2012
+Bluff bluff
+01-Jan-2013
+writing bluff.dat
+-------------------------------
+Starting: dunedin
+Dunedin dunedin
+01-Jan-2012
+Dunedin dunedin
+01-Jan-2013
+writing dunedin.dat
+-------------------------------
+Starting: gisborne
+Gisborne gisborne
+01-Jan-2012
+Gisborne gisborne
+01-Jan-2013
+writing gisborne.dat
+-------------------------------
+Starting: lyttelton
+Lyttelton lyttelton
+01-Jan-2012
+Lyttelton lyttelton
+01-Jan-2013
+writing lyttelton.dat
+-------------------------------
+Starting: marsden point
+Marsden Point marsden point
+01-Jan-2012
+Marsden Point marsden point
+01-Jan-2013
+writing marsden point.dat
+-------------------------------
+Starting: napier
+Napier napier
+01-Jan-2012
+Napier napier
+01-Jan-2013
+writing napier.dat
+-------------------------------
+Starting: nelson
+Nelson nelson
+01-Jan-2012
+Nelson nelson
+01-Jan-2013
+writing nelson.dat
+-------------------------------
+Starting: onehunga
+Onehunga onehunga
+01-Jan-2012
+Onehunga onehunga
+01-Jan-2013
+writing onehunga.dat
+-------------------------------
+Starting: picton
+Picton picton
+01-Jan-2012
+Picton picton
+01-Jan-2013
