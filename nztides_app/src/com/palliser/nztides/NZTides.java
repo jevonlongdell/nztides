@@ -199,7 +199,8 @@ public class NZTides extends Activity {
 	        //outstring.append("Last tide " + hold + "m,    "+num_minutes/60  + "h" +nformat3.format(num_minutes%60) +"m ago\n");
 	        //num_minutes=(int)((t -nowsecs)/(60));
 	        //outstring.append("Next tide " + h + "m, in " +num_minutes/60  + "h" +nformat3.format(num_minutes%60) +"m\n"); 
-	        outstring.append("---------------\n");
+	        //outstring.append("---------------\n");
+	        outstring.append("\n");
 	        
 	    	for(int k=0;k<num_rows;k++){
 				for(int j=0;j<num_cols+1;j++){
@@ -207,8 +208,9 @@ public class NZTides extends Activity {
 				}
 			}
 	        
-	    	outstring.append("---------------\n");
-	        
+	    	//outstring.append("---------------\n");
+	    	outstring.append("\n");
+		        
 	        
 	        
 	        
