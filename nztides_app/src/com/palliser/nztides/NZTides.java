@@ -106,7 +106,7 @@ public class NZTides extends Activity {
 	        hold=0;
 
 	        //look thru tidedatfile for current time
-	        for(int k=0;;k++){
+	        for(;;){
 	        	t = swap(tidedat.readInt());
 	            h = (float) (tidedat.readByte())/(float)(10.0);
 	            if(t>nowsecs){
