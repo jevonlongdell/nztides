@@ -22,7 +22,7 @@ for port in ports:
     print "Starting: " + port
 
 
-    for i in [2012,2013,2014]:
+    for i in [2013,2014,2015]:
         try:
             fp = open("%s/%d.csv"%(port,i),'r')
         except IOError:
