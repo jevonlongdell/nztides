@@ -1,3 +1,4 @@
+import urllib
 import calendar
 import time
 import sys
@@ -11,11 +12,22 @@ lines = []
 
 
 
-ports = ['auckland','bluff','dunedin','gisborne','lyttelton','marsden point','napier','nelson','onehunga','picton','port chalmers','taranaki','tauranga','timaru','wellington','westport']
-
+ports = ['Auckland','Bluff','Dunedin','Gisborne','Lyttelton','<arsden Point','Napier','Nelson','Onehunga','Picton','Port Chalmers','Port Taranaki','Tauranga','Timaru','Wellington','Westport']
 
 
 for port in ports:
+    for year in [2015, 2016, 2017, 2018]:
+        resp = urllib2.urlopen(urllib.quote('http://www.linz.govt.nz/docs/hydro/tidal-info/tide-tables/maj-ports/csv/%s %d.csv'%(port,year)))
+        
+                               
+
+        urllib.urlretrieve(urllib.quote('http://www.linz.govt.nz/docs/hydro/tidal-info/tide-tables/maj-ports/csv/%s %d.csv'%(port,year)),'csvfiles/%s %d.csv'%(port,year))
+
+    
+
+
+
+for port in []:#ports:
 
     times = []
     hts = []
