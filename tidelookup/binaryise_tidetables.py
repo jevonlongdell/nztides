@@ -12,33 +12,22 @@ lines = []
 
 
 
-ports = ['Auckland','Bluff','Dunedin','Gisborne','Lyttelton','<arsden Point','Napier','Nelson','Onehunga','Picton','Port Chalmers','Port Taranaki','Tauranga','Timaru','Wellington','Westport']
+ports = ['Auckland','Bluff','Dunedin','Gisborne','Lyttelton','Marsden Point','Napier','Nelson','Onehunga','Picton','Port Chalmers','Port Taranaki','Tauranga','Timaru','Wellington','Westport']
+
 
 
 for port in ports:
-    for year in [2015, 2016, 2017, 2018]:
-        resp = urllib2.urlopen(urllib.quote('http://www.linz.govt.nz/docs/hydro/tidal-info/tide-tables/maj-ports/csv/%s %d.csv'%(port,year)))
-        
-                               
-
-        urllib.urlretrieve(urllib.quote('http://www.linz.govt.nz/docs/hydro/tidal-info/tide-tables/maj-ports/csv/%s %d.csv'%(port,year)),'csvfiles/%s %d.csv'%(port,year))
-
-    
-
-
-
-for port in []:#ports:
 
     times = []
     hts = []
     print "Starting: " + port
 
 
-    for i in [2013,2014,2015]:
+    for i in [2015,2016,2017,2018]:
         try:
-            fp = open("%s/%d.csv"%(port,i),'r')
+            fp = open("csvfiles/%s_%d.csv"%(port,i),'r')
         except IOError:
-            print "couldn't open \"%s/%d.csv\", assuming we dont have any more data for %s"%(port,i,port)
+            print "couldn't open \"csvfiles/%s_%d.csv\", assuming we dont have any more data for %s"%(port,i,port)
             break
 
             

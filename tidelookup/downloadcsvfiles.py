@@ -16,7 +16,7 @@ ports = ['Auckland','Bluff','Dunedin','Gisborne','Lyttelton','Marsden Point','Na
 
 
 for port in ports:
-    for year in [2019]:
+    for year in [2015,2016,2017,2018]:
         print("Downloading ",port,year)
         resp = urllib2.urlopen('http://www.linz.govt.nz/docs/hydro/tidal-info/tide-tables/maj-ports/csv/%s%s%d.csv'%(port.replace(' ','%20'),'%20',year))
         fp = open('csvfiles/%s_%d.csv'%(port,year),'w')
