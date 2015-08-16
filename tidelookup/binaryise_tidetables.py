@@ -78,10 +78,10 @@ for port in ports:
     
     
 
-    of = open('%s.tdat'%(port,),'w')
+    of = open('%s.tdat'%(port.lower(),),'w')
     print "writing %s.dat"%(port,)
     #first line of tdat file is the port name
-    of.write('[%s]\n'%(string.capwords(port),))
+    of.write('[%s]\n'%(string.capwords(port)))
     #then an integer representing the date of the last tide
     of.write(struct.pack('i',times[-1]))
     print "the last time in this datafile will be " + time.asctime(time.localtime(times[-1]))
