@@ -1,5 +1,7 @@
-import urllib
-import calendar
+from datetime import datetime, timedelta
+from pytz import timezone
+import datetime
+import pytz
 import time
 import sys
 import os
@@ -13,6 +15,8 @@ lines = []
 
 
 ports = ['Auckland','Bluff','Dunedin','Gisborne','Lyttelton','Marsden Point','Napier','Nelson','Onehunga','Picton','Port Chalmers','Port Taranaki','Tauranga','Timaru','Wellington','Westport']
+
+nztime = timezone('Pacific/Auckland')
 
 
 
@@ -49,15 +53,31 @@ for port in ports:
             day = int(f[0])
             mon = int(f[2])
             yr = int(f[3])
-            for k in [4,6,8,10]:
+            for k in range(4,len(f),2):
                 if f[k]=='':
                     break
                 (hr,mn) = map(int,f[k].split(':'))
                 ht = float(f[k+1])
-                tm = calendar.timegm((yr,mon,day,hr,mn,0,0,0,0))-12*60*60
-                times.append(tm)
+                tm = nztime.localize(datetime.datetime(yr,mon,day,hr,mn,0))
+                #tm =  calendar.timegm((yr,mon,day,hr,mn,0,0,0,0))-12*60*60
+                times.append(int((tm - datetime.datetime(1970, 1, 1, tzinfo=pytz.utc)).total_seconds()))
                 hts.append(ht)
                 
+    #look for daylight savings transition stuffups
+    for k in range(1,len(times)):
+        diff=times[k]-times[k-1]
+
+        if abs(diff-22350)>30*60:
+            print(port,datetime.datetime.fromtimestamp(times[k]),diff/60./60.)
+
+        #assert(diff>5.6*60*60)
+        #if(diff>6.6*60*60):
+        #    print(diff/60./60.)
+        #    raise "merry hell"
+
+    
+    
+
     of = open('%s.tdat'%(port,),'w')
     print "writing %s.dat"%(port,)
     #first line of tdat file is the port name
@@ -73,7 +93,13 @@ for port in ports:
         of.write(struct.pack('ib',times[k],int(round(hts[k]*10))))
         #print time.asctime(time.localtime(times[k]))
     of.close()
+    
+   # of = open('%s.txt'%(port,),'w')
+   # for k in range(len(hts)):
+   #     of.write('%d\n'%(times[k],))
+   # of.close()
     print "-------------------------------"
         
+    
 
 #test
