@@ -1,0 +1,24 @@
+ports={}
+
+ports['auckland']='Auckland'
+ports['bluff']='Bluff'
+ports['dunedin']='Dunedin'
+ports['gisborne']='Gisborne'
+ports['lyttelon']='Lyttelton'
+ports['marsden point']='Marsden Point'
+ports['napier']='Napier'
+ports['nelson']='Nelson'
+ports['onehunga']='Onehunga'
+ports['picton']='Picton'
+ports['port chalmers']='Port Chalmers'
+ports['taranaki']='Taranaki'
+ports['tauranga']='Tauranga'
+ports['timaru']='Timaru'
+ports['wellington']='Wellington'
+ports['westport']='Westport'
+
+
+for y in ['2015,2016,2017']:
+    for p in ports.keys():
+        cmd = 'wget http://www.linz.govt.nz/docs/hydro/tidal-info/tide-tables/maj-ports/csv/%s%20%s.csv -o %s/%s.csv'%(ports[p],y,p,y,)'
+        print cmd

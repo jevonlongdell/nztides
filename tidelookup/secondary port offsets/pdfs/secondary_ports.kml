@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>temp.kml</name> 	<Placemark>
+		<name>Maraetai</name>
+		<Point>
+			<coordinates>175.05,-36.95,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Onetaunga Bay</name>
+		<Point>
+			<coordinates>174.7,-36.8167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Coromandel Harbour</name>
+		<Point>
+			<coordinates>175.45,-36.7833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Thames – Rocky Point</name>
+		<Point>
+			<coordinates>175.517,-37.1,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Mahurangi Harbour</name>
+		<Point>
+			<coordinates>174.717,-36.4833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Mangawhai Heads</name>
+		<Point>
+			<coordinates>174.6,-36.0833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Matakana River – Sandspit</name>
+		<Point>
+			<coordinates>174.733,-36.4,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Murray Bay</name>
+		<Point>
+			<coordinates>174.75,-36.7333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Tiritiri Matangi Island</name>
+		<Point>
+			<coordinates>174.883,-36.6,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Weiti River Entrance</name>
+		<Point>
+			<coordinates>174.733,-36.65,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Mansion House Bay – Bon Accord Harbour</name>
+		<Point>
+			<coordinates>174.817,-36.4333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Man o'War Bay</name>
+		<Point>
+			<coordinates>175.15,-36.7833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Matiatia Bay</name>
+		<Point>
+			<coordinates>174.983,-36.7833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Colac Bay/Oraka</name>
+		<Point>
+			<coordinates>167.9,-46.3667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Dog Island</name>
+		<Point>
+			<coordinates>168.417,-46.65,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Kawakaputa Bay</name>
+		<Point>
+			<coordinates>167.817,-46.3833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>New River Entrance</name>
+		<Point>
+			<coordinates>168.25,-46.5333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Nugget Point</name>
+		<Point>
+			<coordinates>169.817,-46.45,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Port Craig</name>
+		<Point>
+			<coordinates>167.367,-46.2167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Riverton/Aparima</name>
+		<Point>
+			<coordinates>168.017,-46.3667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Ruapuke Island</name>
+		<Point>
+			<coordinates>168.5,-46.7833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Waikawa Harbour</name>
+		<Point>
+			<coordinates>169.167,-46.65,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Waipapa Point</name>
+		<Point>
+			<coordinates>168.85,-46.65,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Antipodes Island</name>
+		<Point>
+			<coordinates>178.8,-49.6667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Auckland Island - Carnley Harbour</name>
+		<Point>
+			<coordinates>166.05,-50.8333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Campbell Island/Motu Ihupuku - Perseverance Harbour</name>
+		<Point>
+			<coordinates>169.133,-52.55,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Snares Island</name>
+		<Point>
+			<coordinates>166.6,-48.0333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Solander Island (Hautere)</name>
+		<Point>
+			<coordinates>166.883,-46.5833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Easy Harbour</name>
+		<Point>
+			<coordinates>167.567,-47.15,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Ernest Islands</name>
+		<Point>
+			<coordinates>167.683,-46.9667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Flour Cask Bay</name>
+		<Point>
+			<coordinates>167.483,-47.2833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Golden Bay</name>
+		<Point>
+			<coordinates>168.117,-46.9,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Halfmoon Bay – Oban</name>
+		<Point>
+			<coordinates>168.133,-46.9,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Port Adventure</name>
+		<Point>
+			<coordinates>168.183,-47.0833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Small Craft Retreat</name>
+		<Point>
+			<coordinates>167.65,-47.25,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Yankee River</name>
+		<Point>
+			<coordinates>167.883,-46.6833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Akaroa</name>
+		<Point>
+			<coordinates>172.917,-43.8,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Cape Campbell</name>
+		<Point>
+			<coordinates>174.25,-41.7333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Kaikoura</name>
+		<Point>
+			<coordinates>173.7,-42.4167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Lucky Bay</name>
+		<Point>
+			<coordinates>174.283,-41.2667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Port Underwood</name>
+		<Point>
+			<coordinates>174.1,-41.3333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Rakaia River Mouth</name>
+		<Point>
+			<coordinates>172.217,-43.9,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Owenga</name>
+		<Point>
+			<coordinates>-176.367,-44.0333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Waitangi</name>
+		<Point>
+			<coordinates>-176.567,-43.95,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Mangonui</name>
+		<Point>
+			<coordinates>173.533,-34.9833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>North Cape (Otou)</name>
+		<Point>
+			<coordinates>173.05,-34.4167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Portland Wharf</name>
+		<Point>
+			<coordinates>174.35,-35.8,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Tutukaka Harbour</name>
+		<Point>
+			<coordinates>174.533,-35.6167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Whangamumu Harbour</name>
+		<Point>
+			<coordinates>174.3,-35.25,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Whangarei</name>
+		<Point>
+			<coordinates>174.35,-35.7667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Dairy Factory Wharf</name>
+		<Point>
+			<coordinates>173.25,-35.0333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Doves Bay</name>
+		<Point>
+			<coordinates>174.033,-35.2,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Kerikeri</name>
+		<Point>
+			<coordinates>173.933,-35.2167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Opua</name>
+		<Point>
+			<coordinates>174.117,-35.3167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Russell</name>
+		<Point>
+			<coordinates>174.117,-35.2667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Waitangi</name>
+		<Point>
+			<coordinates>174.083,-35.2667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Port Jackson</name>
+		<Point>
+			<coordinates>175.333,-36.4833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Nagle Cove</name>
+		<Point>
+			<coordinates>175.317,-36.15,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Tryphena</name>
+		<Point>
+			<coordinates>175.483,-36.3167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Houhora Harbour Entrance</name>
+		<Point>
+			<coordinates>173.15,-34.8333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Pukenui Wharf</name>
+		<Point>
+			<coordinates>173.117,-34.8167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Fishing Rock</name>
+		<Point>
+			<coordinates>-177.917,-29.25,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Boat Cove</name>
+		<Point>
+			<coordinates>-177.9,-29.2833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Burgess Island (Pokohinu)</name>
+		<Point>
+			<coordinates>175.117,-35.9,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Waiiti Bay</name>
+		<Point>
+			<coordinates>173.933,-35.0167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Ngatehe Point</name>
+		<Point>
+			<coordinates>172.95,-34.5167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Scheigis Rock</name>
+		<Point>
+			<coordinates>173.3,-34.9,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Unahi Jetty</name>
+		<Point>
+			<coordinates>173.25,-35,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Whangaroa</name>
+		<Point>
+			<coordinates>173.75,-35.0167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Cape Kidnappers</name>
+		<Point>
+			<coordinates>177.083,-39.6333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Portland Island</name>
+		<Point>
+			<coordinates>177.867,-39.2833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Waikokopu</name>
+		<Point>
+			<coordinates>177.833,-39.0667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Wairoa River Mouth</name>
+		<Point>
+			<coordinates>177.433,-39.05,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Akitio River Entrance</name>
+		<Point>
+			<coordinates>176.417,-40.6,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Bare Island (Motu o Kura)</name>
+		<Point>
+			<coordinates>177.033,-39.8333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Cape Turnagain</name>
+		<Point>
+			<coordinates>176.617,-40.5,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Castlepoint</name>
+		<Point>
+			<coordinates>176.217,-40.9167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Porangahau River Entrance</name>
+		<Point>
+			<coordinates>176.7,-40.25,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Punawaitai</name>
+		<Point>
+			<coordinates>176.867,-40.1,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Stephens Island (Takapourewa)</name>
+		<Point>
+			<coordinates>174,-40.6667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Tarakohe</name>
+		<Point>
+			<coordinates>172.9,-40.8167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Catherine Cove</name>
+		<Point>
+			<coordinates>173.883,-40.8667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Elaine Bay</name>
+		<Point>
+			<coordinates>173.767,-41.05,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Elmslie Bay</name>
+		<Point>
+			<coordinates>173.85,-40.9333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Havelock</name>
+		<Point>
+			<coordinates>173.767,-41.2833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Pelorus Sound Entrance</name>
+		<Point>
+			<coordinates>173.983,-40.9167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Portage</name>
+		<Point>
+			<coordinates>174.033,-41.2,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Whakatahuri</name>
+		<Point>
+			<coordinates>174.05,-41.0167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Greville Harbour</name>
+		<Point>
+			<coordinates>173.8,-40.8667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Astrolabe Roadstead</name>
+		<Point>
+			<coordinates>173.05,-40.9667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Croisilles Harbour</name>
+		<Point>
+			<coordinates>173.7,-41.0833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Kaiteriteri</name>
+		<Point>
+			<coordinates>173.017,-41.05,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Mapua</name>
+		<Point>
+			<coordinates>173.1,-41.25,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Motueka</name>
+		<Point>
+			<coordinates>173.017,-41.1333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Cornwallis</name>
+		<Point>
+			<coordinates>174.6,-37,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Papakura Channel – LPG Terminal</name>
+		<Point>
+			<coordinates>174.833,-37.0333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Paratutae Island</name>
+		<Point>
+			<coordinates>174.517,-37.05,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Waiuku</name>
+		<Point>
+			<coordinates>174.733,-37.25,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Muriwai Beach</name>
+		<Point>
+			<coordinates>174.433,-36.8333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Piha Beach</name>
+		<Point>
+			<coordinates>174.467,-36.95,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Te Henga (Bethells Beach)</name>
+		<Point>
+			<coordinates>174.45,-36.8833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Fishermans Rock</name>
+		<Point>
+			<coordinates>174.6,-41.0667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>East Bay</name>
+		<Point>
+			<coordinates>174.133,-41.2333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Long Island</name>
+		<Point>
+			<coordinates>174.283,-41.1167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Okiwa Bay</name>
+		<Point>
+			<coordinates>173.917,-41.2833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Okukari Bay</name>
+		<Point>
+			<coordinates>174.317,-41.2,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Te Iro Bay</name>
+		<Point>
+			<coordinates>174.183,-41.2333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Oamaru</name>
+		<Point>
+			<coordinates>170.983,-45.1,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Otago Harbour Entrance – Spit Wharf</name>
+		<Point>
+			<coordinates>170.717,-45.7833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Ahipara Bay</name>
+		<Point>
+			<coordinates>173.117,-35.1667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Aotea Harbour</name>
+		<Point>
+			<coordinates>174.833,-38,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Cape Maria van Diemen</name>
+		<Point>
+			<coordinates>172.633,-34.4833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Karehana Bay - Plimmerton Boating Club</name>
+		<Point>
+			<coordinates>174.85,-41.0667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Kawhia</name>
+		<Point>
+			<coordinates>174.817,-38.0667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Makara Beach</name>
+		<Point>
+			<coordinates>174.7,-41.2167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Manawatu River Entrance</name>
+		<Point>
+			<coordinates>175.217,-40.4667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Otaki River Entrance</name>
+		<Point>
+			<coordinates>175.1,-40.75,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Paraparaumu Beach</name>
+		<Point>
+			<coordinates>174.983,-40.9,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Porirua Harbour – Mana Cruising Club</name>
+		<Point>
+			<coordinates>174.867,-41.1,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Raglan</name>
+		<Point>
+			<coordinates>174.883,-37.8,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Waikanae River Entrance</name>
+		<Point>
+			<coordinates>175,-40.8667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Waikato River Entrance</name>
+		<Point>
+			<coordinates>174.75,-37.4,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Waitarere Beach</name>
+		<Point>
+			<coordinates>175.183,-40.5667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Kohukohu</name>
+		<Point>
+			<coordinates>173.533,-35.3667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Opononi</name>
+		<Point>
+			<coordinates>173.4,-35.5,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Rawene</name>
+		<Point>
+			<coordinates>173.5,-35.4,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Dargaville</name>
+		<Point>
+			<coordinates>173.867,-35.9333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Helensville</name>
+		<Point>
+			<coordinates>174.45,-36.6667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Island Point</name>
+		<Point>
+			<coordinates>174.083,-36.2333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Pouto Point</name>
+		<Point>
+			<coordinates>174.183,-36.3667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Shelly Beach</name>
+		<Point>
+			<coordinates>174.383,-36.5667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Te Kopuru</name>
+		<Point>
+			<coordinates>173.933,-36.0333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Tikinui</name>
+		<Point>
+			<coordinates>173.967,-36.1167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Tinopai</name>
+		<Point>
+			<coordinates>174.25,-36.25,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Whakapirau</name>
+		<Point>
+			<coordinates>174.25,-36.15,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Waiorua Bay</name>
+		<Point>
+			<coordinates>174.95,-40.8333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Great Island – North West Bay</name>
+		<Point>
+			<coordinates>172.15,-34.15,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Waitara River Entrance</name>
+		<Point>
+			<coordinates>174.233,-38.9833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Opunake Bay</name>
+		<Point>
+			<coordinates>173.85,-39.4667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Patea</name>
+		<Point>
+			<coordinates>174.483,-39.7833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Whanganui River Entrance</name>
+		<Point>
+			<coordinates>174.983,-39.95,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Haurere Point</name>
+		<Point>
+			<coordinates>177.45,-37.9667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Lottin Point</name>
+		<Point>
+			<coordinates>178.167,-37.55,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Maketu Estuary Entrance</name>
+		<Point>
+			<coordinates>176.45,-37.75,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Moutohora Island – Whale Island¹</name>
+		<Point>
+			<coordinates>176.983,-37.8667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Omaio Bay – Motunui Island</name>
+		<Point>
+			<coordinates>177.65,-37.7833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Opotiki Wharf</name>
+		<Point>
+			<coordinates>177.233,-38.0333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Papamoa Beach</name>
+		<Point>
+			<coordinates>176.333,-37.7167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Port Ohope Wharf</name>
+		<Point>
+			<coordinates>177.1,-37.9833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Te Kaha</name>
+		<Point>
+			<coordinates>177.667,-37.7667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Waihi Beach</name>
+		<Point>
+			<coordinates>175.933,-37.4,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Whakaari/White Island</name>
+		<Point>
+			<coordinates>177.183,-37.5167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Whakatane</name>
+		<Point>
+			<coordinates>177,-37.95,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Pauanui</name>
+		<Point>
+			<coordinates>175.883,-37.0667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Slipper Island (Whakahau)</name>
+		<Point>
+			<coordinates>175.95,-37.05,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Tairua</name>
+		<Point>
+			<coordinates>175.85,-37,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Tapuaetahi Bay (Boat Harbour)</name>
+		<Point>
+			<coordinates>175.85,-36.9333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Whangamata</name>
+		<Point>
+			<coordinates>175.883,-37.2,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Whitianga</name>
+		<Point>
+			<coordinates>175.7,-36.8333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>East Cape</name>
+		<Point>
+			<coordinates>178.55,-37.6833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Hicks Bay</name>
+		<Point>
+			<coordinates>178.317,-37.5833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Tolaga Bay – Cooks Cove</name>
+		<Point>
+			<coordinates>178.333,-38.3833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Waipiro Bay</name>
+		<Point>
+			<coordinates>178.333,-38.0333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Bowentown – Katikati Entrance</name>
+		<Point>
+			<coordinates>175.983,-37.4667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Katikati – Kauri Point</name>
+		<Point>
+			<coordinates>175.983,-37.5167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Omokoroa Beach</name>
+		<Point>
+			<coordinates>176.05,-37.6667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Town Wharf</name>
+		<Point>
+			<coordinates>176.15,-37.6667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Ashburton River Entrance</name>
+		<Point>
+			<coordinates>171.8,-44.05,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Rangitata River Entrance</name>
+		<Point>
+			<coordinates>171.517,-44.1833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Cape Terawhiti – Oteranga Bay</name>
+		<Point>
+			<coordinates>174.617,-41.3,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Karori Rock Light</name>
+		<Point>
+			<coordinates>174.65,-41.35,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Cape Palliser (Matakitakiakupe)</name>
+		<Point>
+			<coordinates>175.283,-41.6167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Karamea River Entrance</name>
+		<Point>
+			<coordinates>172.1,-41.25,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Whanganui Inlet</name>
+		<Point>
+			<coordinates>172.583,-40.5833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Bligh Sound</name>
+		<Point>
+			<coordinates>167.533,-44.8833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Charles Sound</name>
+		<Point>
+			<coordinates>167.1,-45.0833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>George Sound</name>
+		<Point>
+			<coordinates>167.367,-44.8667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Gilbert Islands</name>
+		<Point>
+			<coordinates>166.683,-45.6,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Chalky Island - Sealers Bay</name>
+		<Point>
+			<coordinates>166.55,-46.05,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Small Craft Harbour Islands</name>
+		<Point>
+			<coordinates>166.667,-45.9667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Blanket Bay</name>
+		<Point>
+			<coordinates>166.983,-45.3,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Deep Cove</name>
+		<Point>
+			<coordinates>167.15,-45.4667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Front Islands</name>
+		<Point>
+			<coordinates>166.733,-45.7333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Many Islands</name>
+		<Point>
+			<coordinates>166.517,-45.7667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Anita Bay</name>
+		<Point>
+			<coordinates>167.8,-44.5833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Fresh Water Basin</name>
+		<Point>
+			<coordinates>167.933,-44.6667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>Coal Island - Fishing Bay</name>
+		<Point>
+			<coordinates>166.65,-46.1,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>AUCKLAND</name>
+		<Point>
+			<coordinates>174.767,-36.85,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>BLUFF</name>
+		<Point>
+			<coordinates>168.35,-46.6,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>LYTTELTON</name>
+		<Point>
+			<coordinates>172.717,-43.6,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>MARSDEN POINT</name>
+		<Point>
+			<coordinates>174.5,-35.8333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>NAPIER</name>
+		<Point>
+			<coordinates>176.917,-39.4833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>NELSON</name>
+		<Point>
+			<coordinates>173.267,-41.2667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>ONEHUNGA</name>
+		<Point>
+			<coordinates>174.783,-36.9333,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>PICTON</name>
+		<Point>
+			<coordinates>174,-41.2833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>PORT CHALMERS</name>
+		<Point>
+			<coordinates>170.65,-45.8167,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>PORT TARANAKI</name>
+		<Point>
+			<coordinates>174.033,-39.0667,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>TAURANGA</name>
+		<Point>
+			<coordinates>176.183,-37.65,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>TIMARU</name>
+		<Point>
+			<coordinates>171.25,-44.3833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>WELLINGTON</name>
+		<Point>
+			<coordinates>174.783,-41.2833,0</coordinates>
+		</Point>
+	</Placemark> 	<Placemark>
+		<name>WESTPORT</name>
+		<Point>
+			<coordinates>171.6,-41.75,0</coordinates>
+		</Point>
+	</Placemark></Document>
+</kml>

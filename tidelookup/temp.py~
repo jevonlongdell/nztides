@@ -1,0 +1,12 @@
+import datetime
+import pytz
+
+
+nzlocaltime= pytz.timezone('Pacific/Auckland')
+
+#chose 13:45 new years day 2015, New Zealand at this time has
+#daylight savings time active so it's time is 13hrs ahead of UTC
+d = datetime(2014,1,1,13,45,tzinfo=nzlocaltime)
+
+print "In New Zealand the time is:", d.ctime()
+

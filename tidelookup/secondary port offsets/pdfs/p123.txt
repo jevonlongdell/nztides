@@ -1,0 +1,264 @@
+AUCKLAND 36 51 174 46 hhmm hhmm 3.3 2.8 1.0 0.4 1.86
+Maraetai 36 57 175 03 -0015 -0015 - - - - - - *
+Onetaunga Bay 36 49 174 42 +0004 -0007 3.4 2.9 0.9 0.5 2.0 1.00
+Coromandel Peninsula
+Coromandel Harbour 36 47 175 27 -0021 -0015 2.9 2.5 0.7 0.2 1.6 0.93
+Thames – Rocky Point 37 06 175 31 -0031 -0024 3.3 3.0 0.9 0.6 2.0 0.93
+Hauraki Gulf
+Mahurangi Harbour 36 29 174 43 +0002 +0012 - - - - - - *
+Mangawhai Heads 36 05 174 36 +0005 +0005 - - - - - - *
+Matakana River – Sandspit 36 24 174 44 +0005 +0005 2.7 2.4 0.9 0.5 1.6 0.76 *
+Murray Bay 36 44 174 45 -0025 -0003 2.9 2.6 0.7 0.5 1.7 0.83 *
+Tiritiri Matangi Island 36 36 174 53 +0010 -0003 3.0 2.5 0.8 0.3 1.6 0.93
+Weiti River Entrance 36 39 174 44 +0001 +0007 3.0 2.5 0.8 0.2 1.7 0.97
+Whangateau Harbour 36 19 174 47 - - 2.7 2.3 0.6 0.2 1.5 0.86 *
+Kawau Island
+Mansion House Bay – Bon Accord Harbour 36 26 174 49 -0015 -0004 2.7 2.3 0.8 0.3 1.5 0.83
+Waiheke Island
+Man o’War Bay 36 47 175 09 -0018 -0018 3.0 2.5 0.7 0.2 1.6 0.97
+Matiatia Bay 36 47 174 59 0000 +0010 2.9 2.4 0.7 0.2 1.5 0.93
+BLUFF 46 36 168 21 hhmm hhmm 2.8 2.4 1.0 0.6 1.74
+Colac Bay/Oraka 46 22 167 54 -0044 -0039 2.3 1.8 0.9 0.4 1.3 0.86 *
+Dog Island 46 39 168 25 -0017 -0035 2.8 2.3 1.0 0.5 1.7 1.05
+Kawakaputa Bay 46 23 167 49 -0115 -0119 2.8 2.3 0.9 0.4 1.6 1.09
+New River Entrance 46 32 168 15 -0022 -0022 2.8 2.5 0.7 0.4 1.6 1.09 *
+Nugget Point 46 27 169 49 +0107 +0108 2.4 2.1 1.0 0.5 1.5 0.86 *
+Port Craig 46 13 167 22 -0203 -0205 3.1 2.6 1.3 0.7 1.9 1.09
+Riverton/Aparima 46 22 168 01 -0054 -0052 2.9 2.4 1.2 0.7 1.8 1.00
+Ruapuke Island 46 47 168 30 -0011 -0019 2.7 2.3 0.9 0.5 1.6 1.00
+Waikawa Harbour 46 39 169 10 +0017 +0021 2.3 2.0 1.0 0.4 1.4 0.86 *
+Waipapa Point 46 39 168 51 +0017 +0016 2.7 2.5 0.9 0.6 1.7 0.95
+South Offshore Islands
+Antipodes Island 49 40 178 48 +0210 - 1.8 - - - 1.1 - *
+Auckland Island – Carnley Harbour 50 50 166 03 -0036 -0043 1.1 0.8 0.3 0.1 0.6 0.45
+Campbell Island/Motu Ihupuku – Perseverance Harbour 52 33 169 08 +0013 +0020 1.7 1.4 0.9 0.6 1.2 0.50 *
+Snares Island 48 02 166 36 -0109 -0109 1.9 1.7 0.8 0.5 1.2 0.64
+Solander Island (Hautere) 46 35 166 53 -0134 -0134 2.3 2.0 0.9 0.6 1.5 0.77
+Stewart Island/Rakiura
+Easy Harbour 47 09 167 34 -0200 -0201 2.6 2.2 0.9 0.4 1.6 1.00 *
+Ernest Islands 46 58 167 41 -0200 -0203 2.2 1.8 0.7 0.2 1.2 0.91 *
+Flour Cask Bay 47 17 167 29 -0124 -0136 2.8 2.4 1.0 0.5 1.7 1.05 *
+Golden Bay 46 54 168 07 -0001 -0012 2.7 2.2 1.1 0.6 1.7 0.95
+Halfmoon Bay – Oban 46 54 168 08 -0006 -0009 2.6 2.2 1.1 0.6 1.6 0.91
+Port Adventure 47 05 168 11 -0017 -0017 3.0 2.5 1.1 0.6 1.8 1.09
+Small Craft Retreat 47 15 167 39 -0108 -0108 2.8 2.5 1.1 0.7 1.8 0.95
+Yankee River 46 41 167 53 -0103 -0117 2.3 1.9 0.9 0.5 1.4 0.82
+LYTTELTON 43 36 172 43 hhmm hhmm 2.5 2.0 0.7 0.2 1.37
+Akaroa 43 48 172 55 -0043 -0042 2.6 2.2 0.9 0.6 1.5 0.87
+Cape Campbell 41 44 174 15 +0050 +0050 1.7 1.6 0.5 0.4 1.1 0.57
+Kaikoura 42 25 173 42 +0017 +0017 2.0 1.6 0.5 0.2 1.1 0.78
+Lucky Bay 41 16 174 17 +0230 +0230 1.3 1.2 0.5 0.4 0.9 0.39 *
+Port Underwood 41 20 174 06 +0142 +0148 1.5 1.1 0.6 0.3 0.9 0.52
+Rakaia River Mouth 43 54 172 13 -0046 - - - - - - - *
+Chatham Island
+Owenga 44 02 -176 22 +0022 +0021 1.3 1.0 0.3 0.0 0.7 0.57
+Waitangi 43 57 -176 34 +0022 +0021 0.9 0.6 0.2 0.0 0.4 0.39
+MARSDEN POINT 35 50 174 30 hhmm hhmm 2.7 2.3 0.9 0.4 1.57
+Mangonui 34 59 173 32 +0033 +0049 2.6 2.2 0.9 0.4 1.5 0.96
+North Cape (Otou) 34 25 173 03 +0013 +0017 2.4 1.9 0.8 0.3 1.4 0.91
+Portland Wharf 35 48 174 21 +0019 +0013 3.1 2.6 1.1 0.4 1.8 1.17
+Tutukaka Harbour 35 37 174 32 -0015 -0010 2.3 1.9 0.8 0.3 1.4 0.87
+Whangamumu Harbour 35 15 174 18 +0014 +0031 2.1 1.9 0.6 0.2 1.2 0.83
+Whangarei 35 46 174 21 +0021 +0014 3.1 2.6 1.1 0.5 1.8 1.13
+Awanui River
+Dairy Factory Wharf 35 02 173 15 +0122 +0223 2.3 1.8 0.6 0.1 1.2 0.96 *
+Bay of Islands
+Doves Bay 35 12 174 02 -0002 -0002 2.4 2.2 0.8 0.6 1.5 0.78
+Kerikeri 35 13 173 56 +0005 +0009 - - - - - - *
+Opua 35 19 174 07 +0002 +0006 2.5 2.1 0.8 0.4 1.4 0.91
+Russell 35 16 174 07 +0006 +0006 2.4 2.0 0.8 0.3 1.4 0.91
+Waitangi 35 16 174 05 +0022 +0022 2.3 2.0 0.6 0.4 1.4 0.83
+Coromandel Peninsula
+Port Jackson 36 29 175 20 -0030 -0017 2.6 2.1 0.8 0.2 1.4 1.04
+Great Barrier Island (Aotea Island)
+Nagle Cove 36 09 175 19 -0031 -0027 2.6 2.2 1.0 0.4 1.5 0.96
+Tryphena 36 19 175 29 -0029 -0025 2.6 2.2 0.9 0.4 1.5 0.96
+Houhora Harbour
+Houhora Harbour Entrance 34 50 173 09 +0039 +0032 2.2 1.9 0.7 0.3 1.3 0.83
+Pukenui Wharf 34 49 173 07 +0042 +0035 2.1 1.9 0.3 0.1 1.1 0.87 *
+Kermadec Islands - Raoul Island
+Fishing Rock 29 15 -177 55 -0027 -0015 1.8 1.6 0.8 0.5 1.2 0.57
+Boat Cove 29 17 -177 54 -0034 -0027 1.7 1.5 0.7 0.4 1.1 0.57
+Mokohinau Islands
+Burgess Island (Pokohinu) 35 54 175 07 -0024 -0020 2.5 2.1 0.9 0.4 1.5 0.91
+Motukawanui Island
+Waiiti Bay 35 01 173 56 +0013 +0009 2.2 2.0 0.7 0.5 1.3 0.74
+Parengarenga Harbour
+Ngatehe Point 34 31 172 57 +0140 +0145 2.5 2.1 0.7 0.4 1.4 0.91 *
+Rangaunu Harbour
+Omaia Island 35 00 173 16 - - 2.3 2.0 0.5 0.2 1.3 0.91 *
+Scheigis Rock 34 54 173 18 +0015 -0003 2.3 1.9 0.6 0.2 1.3 0.91 *
+Unahi Jetty 35 00 173 15 +0102 +0129 2.3 1.9 0.6 0.2 1.3 0.91 *
+Whangaroa Harbour
+Whangaroa 35 01 173 45 +0032 +0028 2.5 2.2 0.8 0.5 1.5 0.87
+Whangaruru Harbour
+Rocky Point 35 22 174 21 - - 2.2 2.0 0.6 0.3 1.3 0.83 *
+NAPIER 39 29 176 55 hhmm hhmm 1.8 1.5 0.4 0.0 0.94
+Hawke Bay
+Cape Kidnappers 39 38 177 05 -0020 -0020 - - - - - - *
+Portland Island 39 17 177 52 -0015 -0015 - - - - - - *
+Waikokopu 39 04 177 50 +0005 +0005 1.6 1.5 0.4 0.2 0.9 0.78 *
+Wairoa River Mouth 39 03 177 26 0000 0000 1.6 1.5 0.3 0.2 0.9 0.78 *
+Wairarapa Coast
+Akitio River Entrance 40 36 176 25 -0100 -0100 - - - - - - *
+Bare Island (Motu o Kura) 39 50 177 02 -0017 -0017 - - - - - - *
+Cape Turnagain 40 30 176 37 -0049 -0049 - - - - - - *
+Castlepoint 40 55 176 13 -0018 -0018 1.2 1.1 0.1 0.0 0.6 0.67
+Porangahau River Entrance 40 15 176 42 -0038 -0038 - - - - - - *
+Punawaitai 40 06 176 52 -0030 -0030 - - - - - - *
+NELSON 41 16 173 16 hhmm hhmm 4.2 3.2 1.4 0.5 2.32
+Stephens Island (Takapourewa) 40 40 174 00 -0030 -0030 2.8 2.3 1.1 0.6 1.7 0.59 *
+Golden Bay
+Collingwood 40 40 172 40 - - 4.7 3.8 1.4 0.5 2.6 1.14 *
+Motupipi Inlet 40 50 172 51 - - 5.0 4.1 1.5 0.6 2.8 1.19 *
+Tarakohe 40 49 172 54 +0002 +0008 4.0 3.0 1.3 0.3 2.1 1.00
+Marlborough Sounds
+Catherine Cove 40 52 173 53 -0031 -0032 2.6 1.9 0.8 0.2 1.4 0.65
+Current Basin 40 56 173 50 - - 3.9 3.1 1.4 0.6 2.3 0.89 *
+Elaine Bay 41 03 173 46 -0035 -0035 2.6 1.9 1.0 0.4 1.5 0.59
+Elmslie Bay 40 56 173 51 -0033 -0032 3.1 2.2 1.4 0.6 1.8 0.68
+Havelock 41 17 173 46 -0014 -0014 3.1 2.4 1.2 0.5 1.8 0.70
+Pelorus Sound Entrance 40 55 173 59 -0100 -0120 2.8 2.2 1.1 0.5 1.6 0.62 *
+Portage 41 12 174 02 -0028 -0028 3.1 2.4 1.2 0.4 1.8 0.73
+Whakatahuri 41 01 174 03 -0100 -0100 2.7 2.1 1.1 0.6 1.6 0.57 *
+Rangitoto ki te Tonga/D’Urville Island
+Greville Harbour 40 52 173 48 -0020 -0020 3.8 2.9 1.5 0.6 2.2 0.86
+Tasman Bay
+Astrolabe Roadstead 40 58 173 03 -0020 -0020 4.8 3.8 1.2 0.2 2.5 1.24 *
+Croisilles Harbour 41 05 173 42 -0018 -0002 3.6 3.0 1.2 0.7 2.1 0.78 *
+Kaiteriteri 41 03 173 01 +0001 +0005 3.9 2.9 1.3 0.3 2.1 0.97
+Mapua 41 15 173 06 +0019 +0019 4.1 3.3 1.6 0.6 2.4 0.95 *
+Motueka 41 08 173 01 +0006 +0005 3.9 3.3 1.4 0.8 2.4 0.84 *
+Manukau Harbour
+Cornwallis 37 00 174 36 -0020 -0011 3.5 2.9 1.1 0.5 2.0 *
+Papakura Channel (LPG Terminal) 37 02 174 50 +0005 -0004 3.9 3.2 1.1 0.4 2.1
+Paratutae Island 37 03 174 31 -0031 -0020 3.1 2.5 1.0 0.4 1.8
+Waiuku 37 15 174 44 +0030 - - - - - - *
+West Coast Beaches
+Muriwai Beach 36 50 174 26 -0040 -0030 - - - - - *
+Piha Beach 36 57 174 28 -0045 -0035 - - - - - *
+Te Henga (Bethells Beach) 36 53 174 27 -0040 -0050 - - - - - *
+PICTON 41 17 174 00 hhmm hhmm 1.5 1.0 0.5 0.0 0.74
+Cook Strait
+Fishermans Rock 41 04 174 36 0000 0000 1.5 1.0 0.5 0.0 0.7 *
+Queen Charlotte Sound (Totaranui)
+East Bay 41 14 174 08 -0012 -0019 1.4 1.0 0.4 0.0 0.7 *
+Long Island 41 07 174 17 -0004 -0003 1.5 1.0 0.4 0.1 0.7
+Okiwa Bay 41 17 173 55 -0003 -0006 1.5 1.0 0.5 0.0 0.7 *
+Tory Channel
+Okukari Bay 41 12 174 19 -0053 -0034 1.4 1.1 0.7 0.4 0.9
+Te Iro Bay 41 14 174 11 -0019 -0010 1.3 0.9 0.4 0.0 0.7 *
+PORT CHALMERS 45 49 170 39 hhmm hhmm 2.1 1.7 0.5 0.2 1.12
+Oamaru 45 06 170 59 +0002 +0002 2.3 1.9 0.8 0.5 1.4
+Otago Harbour Entrance (Spit Wharf) 45 47 170 43 -0013 -0024 2.0 1.7 0.5 0.3 1.1
+PORT TARANAKI 39 04 174 02 hhmm hhmm 3.5 2.7 1.1 0.3 1.95
+Ahipara Bay 35 10 173 07 -0015 -0015 3.6 2.9 1.1 0.4 2.0 *
+Aotea Harbour 38 00 174 50 -0004 -0004 3.7 2.9 1.2 0.4 2.1 *
+Cape Maria van Diemen 34 29 172 38 -0035 -0035 2.4 2.1 0.6 0.3 1.4 *
+Karehana Bay (Plimmerton Boating Club) 41 04 174 51 -0013 -0022 1.5 0.9 0.8 0.2 0.8 *
+Kawhia 38 04 174 49 +0018 -0004 3.6 2.8 1.1 0.3 2.0
+Makara Beach 41 13 174 42 -0040 -0040 1.3 0.9 0.7 0.3 0.8 *
+Manawatu River Entrance 40 28 175 13 -0020 -0020 2.4 1.8 0.9 0.2 1.3 *
+Otaki River Entrance 40 45 175 06 -0020 -0020 - - - - - *
+Paraparaumu Beach 40 54 174 59 -0020 -0020 - - - - - *
+Porirua Harbour (Mana Cruising Club) 41 06 174 52 +0023 +0020 1.4 1.0 0.6 0.2 0.8 *
+Raglan 37 48 174 53 +0023 +0008 3.2 2.5 0.9 0.1 1.8
+Waikanae River Entrance 40 52 175 00 +0008 +0004 - - - - - *
+Waikato River Entrance 37 24 174 45 -0004 -0004 3.7 3.0 1.2 0.5 2.1 *
+Waitarere Beach 40 34 175 11 -0020 -0020 - - - - - *
+Hokianga Harbour
+Kohukohu 35 22 173 32 +0015 +0015 3.3 2.8 0.8 0.3 1.8 *
+Opononi 35 30 173 24 +0005 +0002 2.9 2.3 0.7 0.1 1.5
+Rawene 35 24 173 30 +0026 +0016 3.3 2.7 1.0 0.4 1.9
+Kaipara Harbour
+Dargaville 35 56 173 52 +0228 +0346 - - - - - *
+Helensville 36 40 174 27 +0222 +0249 - - - - - *
+Island Point 36 14 174 05 +0046 +0046 3.6 2.8 1.1 0.3 1.9
+Pouto Point 36 22 174 11 +0039 +0035 3.3 2.7 0.8 0.3 1.8
+Shelly Beach 36 34 174 23 +0053 +0050 3.8 3.1 0.8 0.1 2.0
+Te Kopuru 36 02 173 56 +0156 +0236 3.4 3.0 - - - *
+Tikinui 36 07 173 58 +0138 +0155 3.8 2.9 0.8 0.1 2.0
+Tinopai 36 15 174 15 +0059 +0059 3.8 2.7 0.9 0.1 1.9
+Whakapirau 36 09 174 15 +0125 +0107 3.9 3.0 1.2 0.3 2.1
+Kapiti Island
+Waiorua Bay 40 50 174 57 -0017 -0017 1.7 1.2 0.9 0.4 1.1 *
+Manawatawhi/Three Kings Islands
+Manawatawhi/Great Island (North West
+Bay)
+34 09 172 09 -0136 -0133 2.4 2.0 0.7 0.4 1.4
+North Taranaki Bight
+Waitara River Entrance 38 59 174 14 0000 0000 3.5 2.9 1.1 0.4 2.0 *
+South Taranaki Bight
+Opunake Bay 39 28 173 51 -0005 -0005 3.3 2.7 1.0 0.3 1.8 *
+Patea 39 47 174 29 -0010 -0010 2.5 1.9 0.8 0.2 1.3 *
+Whanganui River Entrance 39 57 174 59 +0035 +0035 2.8 2.2 1.3 0.7 1.7 *
+TAURANGA 37 39 176 11 hhmm hhmm 1.9 1.6 0.5 0.1 1.04
+Bay of Plenty
+Haurere Point 37 58 177 27 -0025 -0030 - - - - - *
+Maketu Estuary Entrance 37 45 176 27 -0040 - - - - - - *
+Moutohora Island (Whale Island) 37 52 176 59 -0029 -0024 1.9 1.7 0.4 0.2 1.1
+Haurere Point 37 58 177 27 -0025 -0030 - - - - - - *
+Lottin Point 37 33 178 10 -0037 -0031 1.9 1.6 0.5 0.2 1.0 0.94
+Maketu Estuary Entrance 37 45 176 27 -0040 - - - - - - - *
+Moutohora Island – Whale Island¹ 37 52 176 59 -0029 -0024 1.9 1.7 0.4 0.2 1.1 0.94
+Omaio Bay – Motunui Island 37 47 177 39 -0033 -0024 2.1 1.9 0.7 0.5 1.3 0.89
+Opotiki Wharf 38 02 177 14 +0023 +0001 2.0 1.6 0.6 0.3 1.1 0.94
+Papamoa Beach 37 43 176 20 -0040 - - - - - - - *
+Port Ohope Wharf 37 59 177 06 +0022 +0002 2.1 1.7 0.6 0.2 1.2 1.06
+Te Kaha 37 46 177 40 -0030 -0040 - - - - - - *
+Waihi Beach 37 24 175 56 -0015 - - - - - - - *
+Whakaari/White Island 37 31 177 11 -0023 -0017 - - - - - - *
+Whakatane 37 57 177 00 -0022 -0010 2.0 1.7 0.6 0.3 1.1 0.94
+Coromandel Peninsula
+Pauanui 37 04 175 53 -0004 -0002 - - - - - - *
+Slipper Island (Whakahau) 37 03 175 57 -0038 -0010 2.0 1.8 0.5 0.4 1.2 0.89
+Tairua 37 00 175 51 -0003 -0003 1.9 1.6 0.4 0.1 1.0 1.00
+Tapuaetahi Bay (Boat Harbour) 36 56 175 51 -0024 -0024 1.8 1.6 0.6 0.3 1.1 0.83
+Whangamata 37 12 175 53 -0010 -0010 - - - - - - *
+Whitianga 36 50 175 42 -0006 -0009 1.9 1.6 0.6 0.2 1.1 0.94
+Great Mercury Island (Ahuahu)
+Huruhi Harbour 36 36 175 46 - - 2.0 1.8 0.4 0.2 1.1 1.00 *
+North Island East Coast
+East Cape 37 41 178 33 -0045 -0041 2.1 1.9 0.7 0.5 1.3 0.89 *
+Hicks Bay 37 35 178 19 -0045 -0031 2.2 2.0 0.8 0.5 1.3 0.94
+Tokomaru Bay 38 08 178 20 - - 1.9 1.8 0.6 0.5 - 0.78 *
+Tolaga Bay – Cooks Cove 38 23 178 20 -0104 -0110 1.7 1.6 0.4 0.3 1.0 0.78
+Waipiro Bay 38 02 178 20 -0052 -0058 2.0 1.8 0.6 0.5 1.2 0.83 *
+Tauranga Harbour
+Bowentown – Katikati Entrance 37 28 175 59 -0005 - - - - - - - *
+Katikati – Kauri Point 37 31 175 59 +0030 - - - - - - - *
+Omokoroa Beach 37 40 176 03 +0100 - - - - - - - *
+Town Wharf 37 40 176 09 +0020 - - - - - - - *
+TIMARU 44 23 171 15 hhmm hhmm 2.4 2.0 0.8 0.5 1.44
+Ashburton River Entrance 44 03 171 48 +0031 - - - - - - - *
+Rangitata River Entrance 44 11 171 31 +0015 - - - - - - - *
+WELLINGTON 41 17 174 47 hhmm hhmm 1.8 1.4 0.7 0.4 1.08
+Cook Strait
+Cape Terawhiti – Oteranga Bay 41 18 174 37 +0107 +0113 0.9 0.7 0.5 0.3 0.6 0.43
+Karori Rock Light 41 21 174 39 +0045 +0045 - - - - - - *
+Wairarapa Coast
+Cape Palliser (Matakitakiakupe) 41 37 175 17 +0010 +0010 1.5 1.4 0.5 0.3 0.9 0.86 *
+WESTPORT 41 45 171 36 hhmm hhmm 3.2 2.5 0.9 0.2 1.76
+Buller Coast
+Karamea River Entrance 41 15 172 06 -0035 - - - - - - - *
+Whanganui Inlet 40 35 172 35 -0105 -0105 2.9 2.3 0.8 0.0 1.4 0.97 *
+Fiordland Sounds
+Bligh Sound 44 53 167 32 +0100 +0100 2.1 1.8 0.6 0.3 1.2 0.60 *
+Charles Sound 45 05 167 06 +0033 +0035 3.1 2.6 1.1 0.4 1.8 0.90
+George Sound 44 52 167 22 +0034 +0034 2.5 2.1 0.9 0.5 1.5 0.67
+Breaksea Sound
+Gilbert Islands 45 36 166 41 +0037 +0039 2.3 1.8 0.7 0.2 1.3 0.70
+Chalky Inlet
+Chalky Island - Sealers Bay 46 03 166 33 +0053 +0054 2.6 2.1 1.0 0.4 1.5 0.73
+Small Craft Harbour Islands 45 58 166 40 +0105 +0058 2.4 1.9 0.8 0.3 1.3 0.70
+Doubtful Sound/Patea
+Blanket Bay 45 18 166 59 +0036 +0037 2.3 1.7 0.7 0.1 1.2 0.73
+Deep Cove 45 28 167 09 +0112 +0110 2.3 1.8 0.8 0.3 1.3 0.67
+Dusky Sound
+Front Islands 45 44 166 44 +0055 +0056 2.2 1.7 0.6 0.2 1.2 0.67
+Many Islands 45 46 166 31 +0042 +0043 2.6 2.2 1.1 0.5 1.6 0.70
+Milford Sound/Piopiotahi
+Anita Bay 44 35 167 48 +0026 +0027 2.5 1.9 0.9 0.3 1.4 0.73
+Fresh Water Basin 44 40 167 56 +0028 +0029 2.5 1.9 0.8 0.4 1.4 0.70
+Preservation Inlet
+Coal Island - Fishing Bay 46 06 166 39 +0100 +0100 2.2 1.8 0.8 0.3 1.3 0.63
