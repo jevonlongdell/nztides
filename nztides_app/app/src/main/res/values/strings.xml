@@ -2,5 +2,5 @@
 <resources>
     
     <string name="app_name">NZ Tides</string>
-    <string name="AboutString">NZTides\n\nBased on official LINZ tide predictions so should be accurate. Transcription errors are unlikely but possible. This program shouldn\'t be used where life or property is at risk. No Warranty. \n\nPredictions run till about the end of 2012.\n\nReleased under the GPLv3. See code.google.com for source code. Program copyright Jevon Longdell, tide data (presumably) under Crown Copyright.</string>
+    <string name="AboutString">NZTides\n\nBased on official LINZ tide predictions so should be accurate. Other transcription errors are unlikely but possible. This program shouldn\'t be used where life or property might be at risk. No Warranty.\n\nReleased under the GPLv3. See https://github.com/jevonlongdell/nztides for source code. Program copyright Jevon Longdell, tide data presumably under some sort of Crown Copyright.</string>
 </resources>
