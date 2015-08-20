@@ -1,0 +1,7 @@
+nztides_app/.gradle
+nztides_app/local.properties
+nztides_app/.idea/workspace.xml
+nztides_app/.idea/libraries
+.DS_Store
+nztides_app/build
+nztides_app/app/build
