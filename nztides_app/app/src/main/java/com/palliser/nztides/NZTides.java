@@ -61,7 +61,7 @@ public class NZTides extends Activity {
 		   "Tauranga",
 		   "Timaru",
 		   "Wellington",
-		   "Westport"cd 
+		   "Westport"cd
    	};
 */
 
