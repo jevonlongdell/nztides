@@ -1,4 +1,6 @@
-The tide data is from Land information New Zealand. And is under (the reasonably permisive) crown copyright. For details see http://www.linz.govt.nz/linz-copyright.
+The tide data is from Land information New Zealand. 
+And is under (the reasonably permisive) crown copyright.
+For details see http://www.linz.govt.nz/linz-copyright.
 
 The program is copyright Jevon Longdell and is relesed under the GPLv3
 
