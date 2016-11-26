@@ -1,4 +1,4 @@
-075Wanganui
+075Whanganui
 Based on data from 15-Sep-1986
 Local Std Time, tidal heights in metres.
  1  Th        115 0037  1.1 0652  2.4 1314  1.1 1902  2.5
