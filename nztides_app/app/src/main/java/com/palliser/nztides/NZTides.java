@@ -93,7 +93,7 @@ public class NZTides extends Activity {
 		int nowsecs = (int)(now.getTime()/1000);
 		int lasttide;
 		char [][] graph = new char[num_rows][num_cols+1];
-		
+
 
 		
 		
@@ -165,7 +165,9 @@ public class NZTides extends Activity {
 	        
 	        double currentht = amp*Math.cos(omega*(nowsecs-told))+mn;
 	        double riserate =  -amp*omega*Math.sin(omega*(nowsecs-told))*60*60;
-	            
+
+
+
 	        //Start populating outstring
 	        outstring.append(stationname.trim() + " " + nformat4.format(currentht) +"m");
 	        //display up arrow or down arrow depending on weather tide is rising or falling
@@ -227,7 +229,7 @@ public class NZTides extends Activity {
        	 	hightidenext = !hightidenext;
 	        outstring.append(nformat1.format(h)+(hightidenext?" H ":" L ")+dformat.format(new Date(1000*(long)t))+'\n');
 	            
-	            for(int k=0;k<30*4;k++){
+	            for(int k=0;k<20*4;k++){
 	            	 hightidenext = !hightidenext;
 	            	  t = swap(tidedat.readInt());
 	                  h = (float) (tidedat.readByte())/(float)(10.0);
@@ -237,11 +239,9 @@ public class NZTides extends Activity {
 	            outstring.append(dformat.format(new Date(1000*(long)lasttide)));
 	            
 	        }catch (IOException e) {
-	        	outstring.append("Problem with IO: " + e.getMessage() + "\nThis is probably because tide data is old, try looking for an update.");
+	        	outstring.append("Problem reading tide data\nThis is probably because tide data is out of date, try looking for an update.");
 	        }
-	        
-	        return outstring.toString();	
-		
+	        return outstring.toString();
 	}
 	
     /** Called when the activity is first created. */
