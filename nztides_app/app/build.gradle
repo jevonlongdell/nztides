@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.palliser.nztides"
-        minSdkVersion 8
+        minSdkVersion 9
         targetSdkVersion 23
     }
 
@@ -17,3 +17,10 @@ android {
         }
     }
 }
+/*dependencies {
+      compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+  } */
+
+dependencies {
+        compile 'com.google.android.gms:play-services:10.0.0'
+    }

@@ -5,6 +5,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.2'
+//        compile 'com.google.android.gms:play-services:10.0.0'
     }
 }
 
@@ -13,3 +14,4 @@ allprojects {
         jcenter()
     }
 }
+
