@@ -229,7 +229,7 @@ public class NZTides extends Activity {
        	 	hightidenext = !hightidenext;
 	        outstring.append(nformat1.format(h)+(hightidenext?" H ":" L ")+dformat.format(new Date(1000*(long)t))+'\n');
 	            
-	            for(int k=0;k<20*4;k++){
+	            for(int k=0;k<35*4;k++){
 	            	 hightidenext = !hightidenext;
 	            	  t = swap(tidedat.readInt());
 	                  h = (float) (tidedat.readByte())/(float)(10.0);
