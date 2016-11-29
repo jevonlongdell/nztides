@@ -5,3 +5,9 @@ nztides_app/.idea/libraries
 .DS_Store
 nztides_app/build
 nztides_app/app/build
+# Android Studio
+*.iml
+.idea
+#.idea/workspace.xml - remove # and delete .idea if it better suit your needs.
+.gradle
+build/
