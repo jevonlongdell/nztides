@@ -65,9 +65,19 @@ public class NZTides extends Activity {
    	};
 */
 
-	private String[] portlist = {"anawhata", "auckland", "ben gunn", "bluff", "castlepoint", "deep cove", "dunedin", "fishing rock", "flour cask bay", "french bay", "fresh water basin", "gisborne", "green island", "havelock", "huruhi harbour", "jackson bay", "kaikoura", "kaingaroa", "kaiteriteri", "kaituna river", "kawhia", "korotiti bay", "leigh", "lottin point", "lyttelton", "mana", "mano war bay", "mapua", "marsden point", "matiatia bay", "napier", "nelson", "north cape", "oamaru", "oban", "omokoroa", "onehunga", "opotiki wharf", "opua", "owenga", "paratutae island", "picton", "port chalmers", "port ohope wharf", "port taranaki", "pouto point", "preservation inlet", "raglan", "rocky point", "scott base", "spit wharf", "sumner", "tarakohe", "tauranga", "timaru", "waiorua bay", "waitangi (chatham is)", "whanganui", "wellington", "westport", "whakatane", "whangarei", "whangaroa", "whitianga"};
+    private String[] portlist = {"akaroa", "anawhata", "auckland", "ben gunn", "bluff", "castlepoint", "deep cove", "dunedin", "flour cask bay",
+			"fresh water basin", "gisborne", "green island", "havelock", "huruhi harbour", "jackson bay", "kaikoura", "kaingaroa", "kaiteriteri", "kaituna river", "kawhia",
+			"korotiti bay", "leigh", "lottin point", "lyttelton", "mana", "man o'war bay", "mapua", "marsden point", "matiatia bay", "napier", "nelson", "north cape (otou)", "oamaru",
+			"oban", "omokoroa", "onehunga", "opotiki wharf", "opua", "owenga", "paratutae island", "picton", "port chalmers", "port ohope wharf", "port taranaki", "pouto point",
+				 "raglan", "raoul island", "rocky point", "scott base", "spit wharf", "sumner", "tarakohe", "tauranga", "timaru", "waiorua bay", "waitangi (chatham is)",
+				 "whanganui river entrance", "welcombe bay", "wellington", "westport", "whakatane", "whangarei", "whangaroa", "whitianga"};
 
-    private String[] portdisplaynames = {"Anawhata", "Auckland", "Ben Gunn", "Bluff", "Castlepoint", "Deep Cove", "Dunedin", "Fishing Rock", "Flour Cask Bay", "French Bay", "Fresh Water Basin", "Gisborne", "Green Island", "Havelock", "Huruhi Harbour", "Jackson Bay", "Kaikoura", "Kaingaroa", "Kaiteriteri", "Kaituna River", "Kawhia", "Korotiti Bay", "Leigh", "Lottin Point", "Lyttelton", "Mana", "Man o\'War Bay", "Mapua", "Marsden Point", "Matiatia Bay", "Napier", "Nelson", "North Cape", "Oamaru", "Oban", "Omokoroa", "Onehunga", "Opotiki Wharf", "Opua", "Owenga", "Paratutae Island", "Picton", "Port Chalmers", "Port Ohope Wharf", "Port Taranaki", "Pouto Point", "Preservation Inlet", "Raglan", "Rocky Point", "Scott Base", "Spit Wharf", "Sumner", "Tarakohe", "Tauranga", "Timaru", "Waiorua Bay", "Waitangi (Chatham Is)", "Whanganui", "Wellington", "Westport", "Whakatane", "Whangarei", "Whangaroa", "Whitianga"};
+    private String[] portdisplaynames = {"Akaroa", "Anawhata", "Auckland", "Ben Gunn", "Bluff", "Castlepoint", "Deep Cove", "Dunedin", "Flour Cask Bay",
+			"Fresh Water Basin", "Gisborne", "Green Island", "Havelock", "Huruhi Harbour", "Jackson Bay", "Kaikoura", "Kaingaroa", "Kaiteriteri", "Kaituna River", "Kawhia",
+			"Korotiti Bay", "Leigh", "Lottin Point", "Lyttelton", "Mana", "Man o\'War Bay", "Mapua", "Marsden Point", "Matiatia Bay", "Napier", "Nelson", "North Cape (Otou)", "Oamaru",
+			"Oban", "Omokoroa", "Onehunga", "Opotiki Wharf", "Opua", "Owenga", "Paratutae Island", "Picton", "Port Chalmers", "Port Ohope Wharf", "Port Taranaki", "Pouto Point",
+					 "Raglan", "Raoul Island", "Rocky Point", "Scott Base", "Spit Wharf", "Sumner", "Tarakohe", "Tauranga", "Timaru", "Waiorua Bay", "Waitangi (Chatham Is)",
+					 "Whanganui River Entrance", "Welcombe Bay", "Wellington", "Westport", "Whakatane", "Whangarei", "Whangaroa", "Whitianga"};
 
 	public static int swap (int value)
 	{
