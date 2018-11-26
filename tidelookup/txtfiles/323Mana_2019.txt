@@ -1,4 +1,4 @@
-323Porirua Harbour
+323Mana
 Based on data from 22-Jan-2013
 Local Std Time, tidal heights in metres.
  1  Tu        119 0538  1.3 1205  0.9 1834  1.4 9999  9.9
