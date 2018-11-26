@@ -1,4 +1,4 @@
-198Fishing Rock
+198Raoul Island
 Based on data from  1-Jan-2013
 Local Std Time, tidal heights in metres.
  1  We        120 0506  0.5 1129  1.6 1735  0.7 2332  1.6
