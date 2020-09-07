@@ -1,0 +1,13 @@
+When updating NZtides:
+
+For all stations except westport I'll use:
+
+-The data glen sent me in 2019 for 2021
+
+- The data glen sent me in april21 this year for 2022
+
+For westport I'll use the two files in westport folder
+
+
+
+
