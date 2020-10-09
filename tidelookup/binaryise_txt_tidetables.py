@@ -19,9 +19,9 @@ lines = []
 #ports = ['Auckland','Bluff','Dunedin','Gisborne','Lyttelton','Marsden Point','Napier','Nelson','Onehunga','Picton','Port Chalmers','Port Taranaki','Tauranga','Timaru','Wellington','Westport']
 
 
-ports = [ 'Akaroa', 'Anawhata',  'Auckland', 'Ben Gunn', 'Bluff', 'Castlepoint', 'Deep Cove', 'Dunedin', 'Flour Cask Bay', 'Fresh Water Basin', 'Gisborne', 'Green Island', 'Havelock', 'Huruhi Harbour', 'Jackson Bay', 'Kaikoura', 'Kaingaroa', 'Kaiteriteri', 'Kaituna River', 'Kawhia', 'Korotiti Bay', 'Leigh', 'Lottin Point', 'Lyttelton', 'Mana', 'Man o\'War Bay', 'Mapua', 'Marsden Point', 'Matiatia Bay', 'Napier', 'Nelson', 'North Cape (Otou)', 'Oamaru', 'Oban', 'Omokoroa', 'Onehunga', 'Opotiki Wharf', 'Opua', 'Owenga', 'Paratutae Island', 'Picton', 'Port Chalmers', 'Port Ohope Wharf', 'Port Taranaki', 'Pouto Point', 'Raglan', 'Raoul Island', 'Rocky Point',  'Scott Base', 'Spit Wharf', 'Sumner', 'Tarakohe', 'Tauranga', 'Timaru', 'Waiorua Bay', 'Waitangi (Chatham Is)', 'Whanganui River Entrance', 'Welcombe Bay', 'Wellington', 'Westport', 'Whakatane', 'Whangarei', 'Whangaroa', 'Whitianga']
+ports = [ 'Akaroa', 'Anawhata',  'Auckland', 'Ben Gunn Wharf', 'Bluff', 'Castlepoint', 'Deep Cove', 'Dunedin', 'Flour Cask Bay', 'Fresh Water Basin', 'Gisborne', 'Green Island', 'Havelock', 'Huruhi Harbour', 'Jackson Bay', 'Kaikoura', 'Kaingaroa', 'Kaiteriteri', 'Kaituna River', 'Kawhia', 'Korotiti Bay', 'Leigh', 'Lottin Point', 'Lyttelton', 'Mana', 'Man o\'War Bay', 'Mapua', 'Marsden Point', 'Matiatia Bay', 'Napier', 'Nelson', 'North Cape (Otou)', 'Oamaru', 'Oban', 'Omokoroa', 'Onehunga', 'Opotiki Wharf', 'Opua', 'Owenga', 'Paratutae Island', 'Picton', 'Port Chalmers', 'Port Ohope Wharf', 'Port Taranaki', 'Pouto Point', 'Raglan',  'Rocky Point',  'Scott Base', 'Spit Wharf', 'Sumner', 'Tarakohe', 'Tauranga', 'Timaru', 'Waiorua Bay', 'Waitangi (Chatham Is)', 'Whanganui River Entrance', 'Welcombe Bay', 'Wellington', 'Westport', 'Whakatane', 'Whangarei', 'Whangaroa', 'Whitianga']
 
-portfilenames = ['Akaroa', 'Anawhata', 'Auckland', 'Ben Gunn', 'Bluff', 'Castlepoint', 'Deep Cove', 'Dunedin', 'Flour Cask Bay', 'Fresh Water Basin', 'Gisborne', 'Green Island', 'Havelock', 'Huruhi Harbour', 'Jackson Bay', 'Kaikoura', 'Kaingaroa', 'Kaiteriteri', 'Kaituna River', 'Kawhia', 'Korotiti Bay', 'Leigh', 'Lottin Point', 'Lyttelton', 'Mana', 'Mano War Bay', 'Mapua', 'Marsden Point', 'Matiatia Bay', 'Napier', 'Nelson', 'North Cape (Otou)', 'Oamaru', 'Oban', 'Omokoroa', 'Onehunga', 'Opotiki Wharf', 'Opua', 'Owenga', 'Paratutae Island', 'Picton', 'Port Chalmers', 'Port Ohope Wharf', 'Port Taranaki', 'Pouto Point', 'Raglan', 'Raoul Island', 'Rocky Point', 'Scott Base', 'Spit Wharf', 'Sumner', 'Tarakohe', 'Tauranga', 'Timaru', 'Waiorua Bay', 'Waitangi', 'WhanganuiRiverEntrance', 'Welcombe Bay', 'Wellington', 'Westport', 'Whakatane', 'Whangarei', 'Whangaroa', 'Whitianga']
+portfilenames = ['Akaroa', 'Anawhata', 'Auckland', 'Ben Gunn Wharf', 'Bluff', 'Castlepoint', 'Deep Cove', 'Dunedin', 'Flour Cask Bay', 'Fresh Water Basin', 'Gisborne', 'Green Island', 'Havelock', 'Huruhi Harbour', 'Jackson Bay', 'Kaikoura', 'Kaingaroa', 'Kaiteriteri', 'Kaituna River', 'Kawhia', 'Korotiti Bay', 'Leigh', 'Lottin Point', 'Lyttelton', 'Mana', 'Man oWar Bay', 'Mapua', 'Marsden Point', 'Matiatia Bay', 'Napier', 'Nelson', 'North Cape (Otou)', 'Oamaru', 'Oban', 'Omokoroa', 'Onehunga', 'Opotiki Wharf', 'Opua', 'Owenga', 'Paratutae Island', 'Picton', 'Port Chalmers', 'Port Ohope Wharf', 'PortTaranaki', 'Pouto Point', 'Raglan', 'Rocky Point', 'Scott Base', 'Spit Wharf', 'Sumner', 'Tarakohe', 'Tauranga', 'Timaru', 'Waiorua Bay', 'Waitangi (Chatham Is)', 'Whanganui River Entrance', 'Welcombe Bay', 'Wellington', 'Westport', 'Whakatane', 'Whangarei', 'Whangaroa', 'Whitianga']
 
 
 #nztime = timezone('Pacific/Auckland')
@@ -36,30 +36,22 @@ for kk in range(len(ports)):
     print "Starting: " + port
 
 
-    for i in [2018,2019,2020]:
+    for i in [2020,2021,2022]:
         print i
-        if i==2016:
-            try:
-                fp = open("txtfiles/%s_%d.txt"%(portfilenames[kk].replace(' ',''),i),'r')           
-            except IOError:
-                print "couldn't open \"csvfiles/%s_%d.csv\", assuming we dont have any more data for %s"%(port,i,port)
-                input("press enter to continue")
-                break
-        elif True: # i==2017 or i==2018:
-            filenames = glob.glob("txtfiles/???%s_%d.txt"%(portfilenames[kk].replace(' ',''),i))
-            assert(len(filenames)<=1) #there should only be one text file that 
-            try:
-                fp = open(filenames[0],'r')
-            except (IOError,IndexError):
-                if len(filenames)==0:
-                    filenames = [portfilenames[kk]]
-                print  "couldn't open datafile %s for %s,%d, assuming we dont have any more data for %s"%(filenames[0],port,i,port)
-                raw_input("Press Enter to continue...")
-                break
-        else:
-            print "the value of i, %d didn't make sense"%(i,)
-            assert(1==2)
 
+        filenames = glob.glob("txtfiles/???%s_%d.txt"%(portfilenames[kk].replace(' ',''),i))
+        filenames = filenames +  glob.glob("txtfiles/%s_%d.txt"%(portfilenames[kk].replace(' ','_'),i))
+        
+        assert(len(filenames)<=1) #there should only be one text file that 
+        try:
+            fp = open(filenames[0],'r')
+        except (IOError,IndexError):
+            if len(filenames)==0:
+                filenames = [portfilenames[kk]]
+            print  "couldn't open datafile %s for %s,%d, assuming we dont have any more data for %s"%(filenames[0],port,i,port)
+            raw_input("Press Enter to continue...")
+            break
+        
 
             
         header =  fp.readline().strip()[3:].replace('  ',' ')

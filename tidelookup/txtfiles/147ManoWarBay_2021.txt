@@ -1,4 +1,4 @@
-147Man oWar Bay
+147Man o'War Bay
 Based on data from  7-Jan-2017
 Local Std Time, tidal heights in metres.
  1  Fr        121 0225  0.6 0837  3.1 1449  0.7 2058  2.9
