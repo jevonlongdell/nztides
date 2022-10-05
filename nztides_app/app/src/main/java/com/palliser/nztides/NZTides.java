@@ -246,7 +246,7 @@ public class NZTides extends Activity {
 	            outstring.append(dformat.format(new Date(1000*(long)lasttide)));
 	            
 	        }catch (IOException e) {
-	        	outstring.append("Problem reading tide data\nThis is either because the tide data is out of date or you've found some bug, try looking for an update.");
+	        	outstring.append("Problem reading tide data\n\n Try selecting the port again, some times the ports available change with and upgrade. If this doesn't work it is either because the tide data is out of date or you've found some bug, try looking for an update.");
 	        }
 	        return outstring.toString();
 	}
