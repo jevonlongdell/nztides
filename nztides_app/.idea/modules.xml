@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="nztides_app/app" />
-      <module fileurl="file://$PROJECT_DIR$/nztides_app.iml" filepath="$PROJECT_DIR$/nztides_app.iml" group="nztides_app" />
+      <module fileurl="file://$PROJECT_DIR$/nztides_app.iml" filepath="$PROJECT_DIR$/nztides_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/nztides_app.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/nztides_app.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/nztides_app.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/nztides_app.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/nztides_app.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/nztides_app.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/nztides_app.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/nztides_app.app.unitTest.iml" />
     </modules>
   </component>
 </project>

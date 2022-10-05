@@ -65,19 +65,10 @@ public class NZTides extends Activity {
    	};
 */
 
-    private String[] portlist = {"akaroa", "anawhata", "auckland", "ben gunn wharf", "bluff", "castlepoint", "deep cove", "dunedin", "flour cask bay",
-			"fresh water basin", "gisborne", "green island", "havelock", "huruhi harbour", "jackson bay", "kaikoura", "kaingaroa", "kaiteriteri", "kaituna river", "kawhia",
-			"korotiti bay", "leigh", "lottin point", "lyttelton", "mana", "man o'war bay", "mapua", "marsden point", "matiatia bay", "napier", "nelson", "north cape (otou)", "oamaru",
-			"oban", "omokoroa", "onehunga", "opotiki wharf", "opua", "owenga", "paratutae island", "picton", "port chalmers", "port ohope wharf", "port taranaki", "pouto point",
-				 "raglan", "rocky point", "scott base", "spit wharf", "sumner", "tarakohe", "tauranga", "timaru", "waiorua bay", "waitangi (chatham is)",
-				 "whanganui river entrance", "welcombe bay", "wellington", "westport", "whakatane", "whangarei", "whangaroa", "whitianga"};
+   final private String[] portlist = {"Akaroa", "Anakakata Bay", "Anawhata", "Auckland", "Ben Gunn Wharf", "Bluff", "Castlepoint", "Charleston", "Deep Cove", "Dunedin", "Elaine Bay", "Elie Bay", "Fishing Rock - Raoul Island", "Flour Cask Bay", "Fresh Water Basin", "Gisborne", "Green Island", "Havelock", "Helensville", "Huruhi Harbour", "Jackson Bay", "Kaikōura", "Kaingaroa", "Kaiteriteri", "Kaituna River", "Kawhia", "Korotiti Bay", "Leigh", "Long Island", "Lottin Point - Wakatiri", "Lyttelton", "Man oWar Bay", "Mana Marina", "Māpua", "Marsden Point", "Matiatia Bay", "Napier", "Nelson", "North Cape - Otou", "Oamaru", "Oban", "Ōkukari Bay", "Ōmokoroa", "Onehunga", "Opononi", "Ōpōtiki Wharf", "Opua", "Owenga", "Paratutae Island", "Picton", "Port Chalmers", "Port Ōhope Wharf", "Port Taranaki", "Pouto Point", "Raglan", "Rangatira Point", "Richmond Bay", "Scott Base", "Spit Wharf", "Sumner", "Tamaki River", "Tarakohe", "Tauranga", "Thames", "Timaru", "Waitangi - Chatham Island", "Weiti River Entrance", "Welcombe Bay", "Wellington", "Westport", "Whakatāne", "Whanganui River Entrance", "Whangārei", "Whangaroa", "Whitianga", "Wilson Bay"};
 
-    private String[] portdisplaynames = {"Akaroa", "Anawhata", "Auckland", "Ben Gunn Wharf", "Bluff", "Castlepoint", "Deep Cove", "Dunedin", "Flour Cask Bay",
-			"Fresh Water Basin", "Gisborne", "Green Island", "Havelock", "Huruhi Harbour", "Jackson Bay", "Kaikoura", "Kaingaroa", "Kaiteriteri", "Kaituna River", "Kawhia",
-			"Korotiti Bay", "Leigh", "Lottin Point", "Lyttelton", "Mana", "Man o\'War Bay", "Mapua", "Marsden Point", "Matiatia Bay", "Napier", "Nelson", "North Cape (Otou)", "Oamaru",
-			"Oban", "Omokoroa", "Onehunga", "Opotiki Wharf", "Opua", "Owenga", "Paratutae Island", "Picton", "Port Chalmers", "Port Ohope Wharf", "Port Taranaki", "Pouto Point",
-					 "Raglan", "Rocky Point", "Scott Base", "Spit Wharf", "Sumner", "Tarakohe", "Tauranga", "Timaru", "Waiorua Bay", "Waitangi (Chatham Is)",
-					 "Whanganui River Entrance", "Welcombe Bay", "Wellington", "Westport", "Whakatane", "Whangarei", "Whangaroa", "Whitianga"};
+    final private String[] portdisplaynames = {"Akaroa", "Anakakata Bay", "Anawhata", "Auckland", "Ben Gunn Wharf", "Bluff", "Castlepoint", "Charleston", "Deep Cove", "Dunedin", "Elaine Bay", "Elie Bay", "Fishing Rock - Raoul Island", "Flour Cask Bay", "Fresh Water Basin", "Gisborne", "Green Island", "Havelock", "Helensville", "Huruhi Harbour", "Jackson Bay", "Kaikōura", "Kaingaroa", "Kaiteriteri", "Kaituna River", "Kawhia", "Korotiti Bay", "Leigh", "Long Island", "Lottin Point - Wakatiri", "Lyttelton", "Man oWar Bay", "Mana Marina", "Māpua", "Marsden Point", "Matiatia Bay", "Napier", "Nelson", "North Cape - Otou", "Oamaru", "Oban", "Ōkukari Bay", "Ōmokoroa", "Onehunga", "Opononi", "Ōpōtiki Wharf", "Opua", "Owenga", "Paratutae Island", "Picton", "Port Chalmers", "Port Ōhope Wharf", "Port Taranaki", "Pouto Point", "Raglan", "Rangatira Point", "Richmond Bay", "Scott Base", "Spit Wharf", "Sumner", "Tamaki River", "Tarakohe", "Tauranga", "Thames", "Timaru", "Waitangi - Chatham Island", "Weiti River Entrance", "Welcombe Bay", "Wellington", "Westport", "Whakatāne", "Whanganui River Entrance", "Whangārei", "Whangaroa", "Whitianga", "Wilson Bay"};
+
 
 	public static int swap (int value)
 	{
@@ -108,8 +99,11 @@ public class NZTides extends Activity {
 		
 		
 	    try {
+
 	    	DataInputStream tidedat = new DataInputStream(am.open(port+".tdat",1));
-	    	String stationname = tidedat.readLine();
+
+
+			String stationname = tidedat.readLine();
 	        
 	    	//read timestamp for last tide in datafile
 	    	lasttide = swap(tidedat.readInt());
@@ -249,7 +243,7 @@ public class NZTides extends Activity {
 	            outstring.append(dformat.format(new Date(1000*(long)lasttide)));
 	            
 	        }catch (IOException e) {
-	        	outstring.append("Problem reading tide data\nThis is probably because tide data is out of date, try looking for an update.");
+	        	outstring.append("Problem reading tide data\nThis is either because the tide data is out of date or you've found some bug, try looking for an update.");
 	        }
 	        return outstring.toString();
 	}
@@ -261,7 +255,7 @@ public class NZTides extends Activity {
 
         //restore current port from settings file
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
-        currentport = settings.getString("CurrentPort","auckland" );        
+        currentport = settings.getString("CurrentPort","Auckland" );
         
     //    setContentView(R.layout.main);
     }
