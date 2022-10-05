@@ -2,6 +2,8 @@ package com.palliser.nztides;
 
 import java.io.DataInputStream;
 import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -103,8 +105,9 @@ public class NZTides extends Activity {
 	    	DataInputStream tidedat = new DataInputStream(am.open(port+".tdat",1));
 
 
-			String stationname = tidedat.readLine();
-	        
+			String stationname_tofu = tidedat.readLine(); //stationname with unicode stuff ups
+	       // byte[] stationnamebytes = stationname_tofu.getBytes(Charset.defaultCharset());
+			//String stationname = new String(stationnamebytes, "UTF-8");
 	    	//read timestamp for last tide in datafile
 	    	lasttide = swap(tidedat.readInt());
 	    	 
@@ -173,7 +176,7 @@ public class NZTides extends Activity {
 
 
 	        //Start populating outstring
-	        outstring.append(stationname.trim() + " " + nformat4.format(currentht) +"m");
+	        outstring.append("["+port + "] " + nformat4.format(currentht) +"m");
 	        //display up arrow or down arrow depending on weather tide is rising or falling
 	        if(hold<h)
 	            outstring.append(" \u2191");//up arrow
