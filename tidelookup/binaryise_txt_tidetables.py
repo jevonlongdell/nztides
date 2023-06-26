@@ -45,8 +45,11 @@ def unwoke(st):
 
 
 portfilenames = glob.glob('txtfiles/*_2022-23.txt')
-
 portnames = [x.removeprefix('txtfiles/').removesuffix('_2022-23.txt').replace('_',' ') for x in portfilenames]
+
+newportfilenames = glob.glob('txtfiles/*_2023-24.txt')
+newportnames = [x.removeprefix('txtfiles/').removesuffix('_2023-24.txt').replace('_',' ') for x in newportfilenames]
+
 
 
 
