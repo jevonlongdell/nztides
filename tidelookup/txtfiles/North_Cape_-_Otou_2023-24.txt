@@ -1,4 +1,4 @@
-﻿162North Cape / Otou
+﻿162North Cape - Otou
 Based on data from  1-Jul-2014
 Local Std Time, tidal heights in metres.
  1  Sa        723 0511  2.2 1138  0.6 1802  2.3 9999  9.9

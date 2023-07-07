@@ -1,4 +1,4 @@
-﻿357Lottin Point / Wakatiri
+﻿357Lottin Point - Wakatiri
 Based on data from 15-Mar-2015
 Local Std Time, tidal heights in metres.
  1  Sa        723 0352  1.7 1018  0.4 1640  1.7 2245  0.5

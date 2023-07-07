@@ -44,8 +44,8 @@ def unwoke(st):
 #nztime = timezone('Pacific/Auckland')
 
 
-portfilenames = glob.glob('txtfiles/*_2022-23.txt')
-portnames = [x.removeprefix('txtfiles/').removesuffix('_2022-23.txt').replace('_',' ') for x in portfilenames]
+portfilenames = glob.glob('txtfiles/*_2023-24.txt')
+portnames = [x.removeprefix('txtfiles/').removesuffix('_2023-24.txt').replace('_',' ') for x in portfilenames]
 
 newportfilenames = glob.glob('txtfiles/*_2023-24.txt')
 newportnames = [x.removeprefix('txtfiles/').removesuffix('_2023-24.txt').replace('_',' ') for x in newportfilenames]
@@ -67,7 +67,7 @@ for (kk,(port,file)) in enumerate(zip(portnames,portfilenames)):
         
 
             
-    header =  fp.readline().strip()[3:].replace('  ',' ')
+    header =  fp.readline().strip()[4:].replace('  ',' ')
     print(header, port)
     assert(unwoke(header)==unwoke(port)) #these should be the same
     fp.readline()

@@ -1,4 +1,4 @@
-﻿056Halfmoon Bay / Oban
+﻿056Halfmoon Bay - Oban
 Based on data from 15-Jan-2009
 Local Std Time, tidal heights in metres.
  1  Sa        723 0529  0.8 1149  2.5 1757  0.8 9999  9.9
