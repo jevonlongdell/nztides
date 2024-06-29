@@ -44,11 +44,11 @@ def unwoke(st):
 #nztime = timezone('Pacific/Auckland')
 
 
-portfilenames = glob.glob('txtfiles/*_2023-24.txt')
-portnames = [x.removeprefix('txtfiles/').removesuffix('_2023-24.txt').replace('_',' ') for x in portfilenames]
+portfilenames = glob.glob('txtfiles/*_2024-25_NZNA.txt')
+portnames = [x.removeprefix('txtfiles/').removesuffix('_2024-25_NZNA.txt').replace('_',' ') for x in portfilenames]
 
-newportfilenames = glob.glob('txtfiles/*_2023-24.txt')
-newportnames = [x.removeprefix('txtfiles/').removesuffix('_2023-24.txt').replace('_',' ') for x in newportfilenames]
+#newportfilenames = glob.glob('txtfiles/*_2023-24.txt')
+#newportnames = [x.removeprefix('txtfiles/').removesuffix('_2023-24.txt').replace('_',' ') for x in newportfilenames]
 
 
 
@@ -65,11 +65,14 @@ for (kk,(port,file)) in enumerate(zip(portnames,portfilenames)):
 #            input("Press Enter to continue...")
 #            break
         
-
-            
-    header =  fp.readline().strip()[4:].replace('  ',' ')
+    
+    headerline = fp.readline()  
+    headerline = headerline.replace('\ufeff','')
+    header =  headerline.strip()[3:].replace('  ',' ')
+    #print(f'headerline: |{headerline}|')
     print(header, port)
-    assert(unwoke(header)==unwoke(port)) #these should be the same
+    #import pdb; pdb.set_trace()
+    assert(unwoke(header).replace(' ','').replace('/','')==unwoke(port)) #these should be the same
     fp.readline()
     #print 
     fp.readline()
