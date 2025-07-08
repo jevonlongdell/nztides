@@ -5,9 +5,12 @@ import urllib.parse
 
 # Delete all .csv files in csvfiles directory before downloading new ones
 csv_dir = 'csvfiles'
+os.makedirs(csv_dir, exist_ok=True)
+
 for f in glob.glob(os.path.join(csv_dir, '*.csv')):
     if os.path.isfile(f):
         os.remove(f)
+# alternatively, probably cleaner to use git: git rm "tidelookup/csvfiles/*.csv" 
 
 lines = []
 
@@ -27,5 +30,5 @@ for port in ports:
             fp.write(resp.read())
 
 print('-------------------------------------------------------------------------------')
-print('here is a Java variable declaration for portdisplaynames using the current ports list. This makes it easy to copy the array directly into your Java code. Let me know if you need any more adjustments!')
+print('here is a Java variable declaration for portdisplaynames using the current ports list. This makes it easy to copy the array directly into NZTides.java')
 print('final private String[] portdisplaynames = {"' + '\", "'.join(ports) + '"};')
