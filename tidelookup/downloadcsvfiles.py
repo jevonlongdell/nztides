@@ -1,26 +1,31 @@
-import urllib2
-import calendar
-import time
-import sys
 import os
-import struct
-import math
-import string
+import glob
+import urllib.request
+import urllib.parse
+
+# Delete all .csv files in csvfiles directory before downloading new ones
+csv_dir = 'csvfiles'
+for f in glob.glob(os.path.join(csv_dir, '*.csv')):
+    if os.path.isfile(f):
+        os.remove(f)
+
 lines = []
 
 #takes linz csv files and turns them into binary format for android app
 
-
-
-ports = ['Auckland','Bluff','Dunedin','Gisborne','Lyttelton','Marsden Point','Napier','Nelson','Onehunga','Picton','Port Chalmers','Port Taranaki','Tauranga','Timaru','Wellington','Westport']
-
+# ports = ['Auckland','Bluff','Dunedin','Gisborne','Lyttelton','Marsden Point','Napier','Nelson','Onehunga','Picton','Port Chalmers','Port Taranaki','Tauranga','Timaru','Wellington','Westport', 'Whitianga']
+ports = ['Akaroa', 'Anakakata Bay', 'Anawhata', 'Auckland', 'Ben Gunn Wharf', 'Bluff', 'Castlepoint', 'Charleston', 'Dargaville', 'Deep Cove', 'Dog Island', 'Dunedin', 'Elaine Bay', 'Elie Bay', 'Fishing Rock - Raoul Island', 'Flour Cask Bay', 'Fresh Water Basin', 'Gisborne', 'Green Island', 'Halfmoon Bay - Oban', 'Havelock', 'Helensville', 'Huruhi Harbour', 'Jackson Bay', 'Kaikōura', 'Kaingaroa - Chatham Island', 'Kaiteriteri', 'Kaituna River Entrance', 'Kawhia', 'Korotiti Bay', 'Leigh', 'Long Island', 'Lottin Point - Wakatiri', 'Lyttelton', 'Mana Marina', 'Man o\'War Bay', 'Manu Bay', 'Māpua', 'Marsden Point', 'Matiatia Bay', 'Motuara Island', 'Moturiki Island', 'Napier', 'Nelson', 'New Brighton Pier', 'North Cape - Otou', 'Oamaru', 'Ōkukari Bay', 'Omaha Bridge', 'Ōmokoroa', 'Onehunga', 'Opononi', 'Ōpōtiki Wharf', 'Opua', 'Owenga - Chatham Island', 'Paratutae Island', 'Picton', 'Port Chalmers', 'Port Ōhope Wharf', 'Port Taranaki', 'Pouto Point', 'Raglan', 'Rangatira Point', 'Rangitaiki River Entrance', 'Richmond Bay', 'Riverton - Aparima', 'Scott Base', 'Spit Wharf', 'Sumner Head', 'Tamaki River', 'Tarakohe', 'Tauranga', 'Te Weka Bay', 'Thames', 'Timaru', 'Town Basin', 'Waihopai River Entrance', 'Waitangi - Chatham Island', 'Weiti River Entrance', 'Welcombe Bay', 'Wellington', 'Westport', 'Whakatāne', 'Whanganui River Entrance', 'Whangārei', 'Whangaroa', 'Whitianga', 'Wilson Bay']
+years = [2025,2026,2027]
 
 for port in ports:
-    for year in [2015,2016,2017,2018]:
+    for year in years:
         print("Downloading ",port,year)
-        resp = urllib2.urlopen('http://www.linz.govt.nz/docs/hydro/tidal-info/tide-tables/maj-ports/csv/%s%s%d.csv'%(port.replace(' ','%20'),'%20',year))
-        fp = open('csvfiles/%s_%d.csv'%(port,year),'w')
-        fp.write(resp.read())
+        port_encoded = urllib.parse.quote(port)
+        url = f'https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/{port_encoded}%20{year}.csv'
+        resp = urllib.request.urlopen(url)
+        with open(os.path.join(csv_dir, f'{port}_{year}.csv'), 'wb') as fp:
+            fp.write(resp.read())
 
-                               
-
+print('-------------------------------------------------------------------------------')
+print('here is a Java variable declaration for portdisplaynames using the current ports list. This makes it easy to copy the array directly into your Java code. Let me know if you need any more adjustments!')
+print('final private String[] portdisplaynames = {"' + '\", "'.join(ports) + '"};')
