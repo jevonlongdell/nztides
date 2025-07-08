@@ -1,0 +1,2 @@
+# Default optimized ProGuard rules for Android
+# This file is required for AGP 8.x compatibility
