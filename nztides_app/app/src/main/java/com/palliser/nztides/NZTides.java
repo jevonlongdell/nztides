@@ -26,50 +26,11 @@ public class NZTides extends Activity {
     public static final String PREFS_NAME = "NZTidesPrefsFile";//file to store prefs
 
     
-   private String currentport;
+    private String currentport;
    
-   /* private String[] portlist = {
-		   "auckland",
-		   "bluff",
-		   "dunedin",
-		   "gisborne",
-		   "lyttelton",
-		   "marsden point",
-		   "napier",
-		   "nelson",
-		   "onehunga",
-		   "picton",
-		   "port chalmers",
-		   "port taranaki",
-		   "tauranga",
-		   "timaru",
-		   "wellington",
-		   "westport"
-   	};
-   
-   private String[] portdisplaynames = {
-		   "Auckland",
-		   "Bluff",
-		   "Dunedin",
-		   "Gisborne",
-		   "Lyttelton",
-		   "Marsden Point",
-		   "Napier",
-		   "Nelson",
-		   "Onehunga",
-		   "Picton",
-		   "Port Chalmers",
-		   "Port Taranaki",
-		   "Tauranga",
-		   "Timaru",
-		   "Wellington",
-		   "Westport"cd
-   	};
-*/
 
-   final private String[] portlist = {"Akaroa", "AnakakataBay", "Anawhata", "Auckland", "BenGunnWharf", "Bluff", "Castlepoint", "Charleston", "Dargaville", "DeepCove", "DogIsland", "Dunedin", "ElaineBay", "ElieBay", "FishingRock-RaoulIsland", "FlourCaskBay", "FreshWaterBasin", "Gisborne", "GreenIsland", "HalfmoonBayOban", "Havelock", "Helensville", "HuruhiHarbour", "JacksonBay", "Kaikoura", "Kaingaroa-ChathamIsland", "Kaiteriteri", "KaitunaRiver", "Kawhia", "KorotitiBay", "Leigh", "LongIsland", "LottinPoint-Wakatiri", "Lyttelton", "ManaMarina", "ManawatuRiverEntrance", "Mano'WarBay", "ManuBay", "Mapua", "MarsdenPoint", "MatiatiaBay", "MotuaraIsland", "MoturikiIsland", "Napier", "Nelson", "NewBrightonPier", "NorthCape-Otou", "Oamaru", "OkukariBay", "OmahaBridge", "Omokoroa", "Onehunga", "Opononi", "OpotikiWharf", "Opua", "Owenga-ChathamIsland", "ParatutaeIsland", "Picton", "PortChalmers", "PortOhopeWharf", "PortTaranaki", "PoutoPoint", "Raglan", "RangatiraPoint", "RangitaikiRiver", "RichmondBay", "Riverton-Aparima", "ScottBase", "SpitWharf", "SumnerHead", "TamakiRiver", "Tarakohe", "Tauranga", "TeWekaBay", "Thames", "Timaru", "TownBasin", "WaihopaiRiverEntrance", "Waitangi-ChathamIsland", "WeitiRiverEntrance", "WelcombeBay", "Wellington", "Westport", "Whakatane", "WhanganuiRiverEntrance", "Whangarei", "Whangaroa", "Whitianga", "WilsonBay"};
-   final private String[] portdisplaynames = {"Akaroa", "Anakakata Bay", "Anawhata", "Auckland", "Ben Gunn Wharf", "Bluff", "Castlepoint", "Charleston", "Dargaville", "Deep Cove", "Dog Island", "Dunedin", "Elaine Bay", "Elie Bay", "Fishing Rock - Raoul Island", "Flour Cask Bay", "Fresh Water Basin", "Gisborne", "Green Island", "Halfmoon Bay - Oban", "Havelock", "Helensville", "Huruhi Harbour", "Jackson Bay", "Kaikoura", "Kaingaroa - ChathamIsland", "Kaiteriteri", "Kaituna River", "Kawhia", "Korotiti Bay", "Leigh", "Long Island", "Lottin Point - Wakatiri", "Lyttelton", "Mana Marina", "Manawatu River Entrance", "Man o'War Bay", "Manu Bay", "Mapua", "Marsden Point", "Matiatia Bay", "Motuara Island", "Moturiki Island", "Napier", "Nelson", "New Brighton Pier", "North Cape - Otou", "Oamaru", "Okukari Bay", "Omaha Bridge", "Omokoroa", "Onehunga", "Opononi", "Opotiki Wharf", "Opua", "Owenga - Chatham Island", "Paratutae Island", "Picton", "Port Chalmers", "Port Ohope Wharf", "Port Taranaki", "Pouto Point", "Raglan", "Rangatira Point", "Rangitaiki River", "Richmond Bay", "Riverton - Aparima", "Scott Base", "Spit Wharf", "Sumner Head", "Tamaki River", "Tarakohe", "Tauranga", "Te Weka Bay", "Thames", "Timaru", "Town Basin", "Waihopai River Entrance", "Waitangi - Chatham Island", "Weiti River Entrance", "Welcombe Bay", "Wellington", "Westport", "Whakatane", "Whanganui River Entrance", "Whangarei", "Whangaroa", "Whitianga", "Wilson Bay"};
-
+    final private String[] portdisplaynames = {"Akaroa", "Anakakata Bay", "Anawhata", "Auckland", "Ben Gunn Wharf", "Bluff", "Castlepoint", "Charleston", "Dargaville", "Deep Cove", "Dog Island", "Dunedin", "Elaine Bay", "Elie Bay", "Fishing Rock - Raoul Island", "Flour Cask Bay", "Fresh Water Basin", "Gisborne", "Green Island", "Halfmoon Bay - Oban", "Havelock", "Helensville", "Huruhi Harbour", "Jackson Bay", "Kaikōura", "Kaingaroa - Chatham Island", "Kaiteriteri", "Kaituna River Entrance", "Kawhia", "Korotiti Bay", "Leigh", "Long Island", "Lottin Point - Wakatiri", "Lyttelton", "Mana Marina", "Man o'War Bay", "Manu Bay", "Māpua", "Marsden Point", "Matiatia Bay", "Motuara Island", "Moturiki Island", "Napier", "Nelson", "New Brighton Pier", "North Cape - Otou", "Oamaru", "Ōkukari Bay", "Omaha Bridge", "Ōmokoroa", "Onehunga", "Opononi", "Ōpōtiki Wharf", "Opua", "Owenga - Chatham Island", "Paratutae Island", "Picton", "Port Chalmers", "Port Ōhope Wharf", "Port Taranaki", "Pouto Point", "Raglan", "Rangatira Point", "Rangitaiki River Entrance", "Richmond Bay", "Riverton - Aparima", "Scott Base", "Spit Wharf", "Sumner Head", "Tamaki River", "Tarakohe", "Tauranga", "Te Weka Bay", "Thames", "Timaru", "Town Basin", "Waihopai River Entrance", "Waitangi - Chatham Island", "Weiti River Entrance", "Welcombe Bay", "Wellington", "Westport", "Whakatāne", "Whanganui River Entrance", "Whangārei", "Whangaroa", "Whitianga", "Wilson Bay"};
+	
 	public static int swap (int value)
 	{
 	  int b1 = (value >>  0) & 0xff;
@@ -267,11 +228,9 @@ public class NZTides extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
 
-        // This is our one standard application action -- inserting a
-        // new note into the list.
         SubMenu portMenu = menu.addSubMenu(0, MENU_ITEM_CHOOSE_PORT, 0,"Select Port");
-        for(int k=0;k<portlist.length;k++)
-        	portMenu.add(0,Menu.FIRST+10+k,0,portdisplaynames[k]);
+        for(int k=0;k<portdisplaynames.length;k++)
+            portMenu.add(0,Menu.FIRST+10+k,0,portdisplaynames[k]);
         
         menu.add(0, MENU_ITEM_ABOUT, 0,"About" );
                
@@ -285,15 +244,13 @@ public class NZTides extends Activity {
     }
 
     public boolean  onOptionsItemSelected  (MenuItem  item){
-    	  //AdapterContextMenuInfo info = (AdapterContextMenuInfo) item.getMenuInfo();
-    	
-    	int id = item.getItemId();
-	    
-	    if(id>=Menu.FIRST+10 && id<Menu.FIRST+10+portlist.length){
-	    	currentport = portlist[id-11];
-	    	this.onResume();
-	    	return true;
-	    }
+        int id = item.getItemId();
+    
+        if(id>=Menu.FIRST+10 && id<Menu.FIRST+10+portdisplaynames.length){
+            currentport = portdisplaynames[id-11];
+            this.onResume();
+            return true;
+        }
 	        
     	switch (id) {
     	  case MENU_ITEM_ABOUT:
