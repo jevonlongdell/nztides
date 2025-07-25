@@ -2,13 +2,16 @@ package com.palliser.nztides;
 
 import java.io.DataInputStream;
 import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
+//import java.nio.charset.Charset;
+//import java.nio.charset.StandardCharsets;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import android.app.Activity;
+//import android.app.Activity;
+import androidx.activity.ComponentActivity;
+import androidx.activity.compose.setConent;
+
 import android.content.SharedPreferences;
 import android.content.res.AssetManager;
 import android.graphics.Typeface;
@@ -20,7 +23,7 @@ import android.view.ViewGroup;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-public class NZTides extends Activity {
+public class NZTides extends ComponentActivity {
 	
     public static final int MENU_ITEM_CHOOSE_PORT = Menu.FIRST;
     public static final int MENU_ITEM_ABOUT = Menu.FIRST+1;
@@ -218,6 +221,7 @@ public class NZTides extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+		//enableEdgeToEdge();
         //restore current port from settings file
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
         currentport = settings.getString("CurrentPort","Auckland" );
@@ -276,10 +280,7 @@ public class NZTides extends Activity {
         tv.setText(outstring);//+now.format2445());
         ScrollView sv = new ScrollView(this);
         sv.addView(tv);
-        setContentView(sv,new ViewGroup.LayoutParams(
-				ViewGroup.LayoutParams.MATCH_PARENT,
-				ViewGroup.LayoutParams.MATCH_PARENT
-		));
+        setContent(sv);
     	super.onResume();
     }
 

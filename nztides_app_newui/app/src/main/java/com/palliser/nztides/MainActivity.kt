@@ -6,15 +6,31 @@ import android.view.Menu
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.gestures.Orientation
+import androidx.compose.foundation.gestures.rememberScrollableState
+import androidx.compose.foundation.gestures.scrollable
+import androidx.compose.foundation.gestures.snapping.rememberSnapFlingBehavior
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.MoreVert
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.palliser.nztides.ui.theme.NZTidesTheme
 import java.io.DataInputStream
 import java.io.IOException
@@ -34,38 +50,128 @@ class MainActivity : ComponentActivity() {
     val PREFS_NAME: String = "NZTidesPrefsFile" //file to store prefs
 
 
-
+    //@Composable
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-     //   enableEdgeToEdge()
+        enableEdgeToEdge()
 
 
         setContent {
             NZTidesTheme {
-                Scaffold() {
-                    Text("Hello World", Modifier.padding(innerPadding))
+                Scaffold { innerPadding ->
+                    val scrollState = rememberScrollState()
+                    //MinimalDropdownMenu()
+                    Text(
+                        calc_outstring(currentport),
+                        modifier = Modifier
+                            .padding(innerPadding)
+                            .verticalScroll(scrollState),
+                        fontFamily = FontFamily.Monospace
+                    )
 
-                    // NZTidesTheme {
-                    //     Scaffold(modifier = Modifier.fillMaxSize()) { //innerPadding ->
-                    // Greeting(
-                    //     name = calc_outstring(currentport),
-                    //     modifier = Modifier.padding(innerPadding)
-                    // )
-                    //             Text(calc_outstring(currentport),
-                    // modifier = Modifier.padding(innerPadding),
-                    //               FontFamily = FontFamily.Monospace)
-                    //   }
-                    // }
+
                 }
             }
         }
     }
 
+    //override fun onCreateOptionsMenu(menu){
+    //
+    // }
+
 
     val currentport: String = "Auckland"
 
-
-    val portdisplaynames = arrayOf("Akaroa", "Anakakata Bay", "Anawhata", "Auckland", "Ben Gunn Wharf", "Bluff", "Castlepoint", "Charleston", "Dargaville", "Deep Cove", "Dog Island", "Dunedin", "Elaine Bay", "Elie Bay", "Fishing Rock - Raoul Island", "Flour Cask Bay", "Fresh Water Basin", "Gisborne", "Green Island", "Halfmoon Bay - Oban", "Havelock", "Helensville", "Huruhi Harbour", "Jackson Bay", "Kaikōura", "Kaingaroa - Chatham Island", "Kaiteriteri", "Kaituna River Entrance", "Kawhia", "Korotiti Bay", "Leigh", "Long Island", "Lottin Point - Wakatiri", "Lyttelton", "Mana Marina", "Man o'War Bay", "Manu Bay", "Māpua", "Marsden Point", "Matiatia Bay", "Motuara Island", "Moturiki Island", "Napier", "Nelson", "New Brighton Pier", "North Cape - Otou", "Oamaru", "Ōkukari Bay", "Omaha Bridge", "Ōmokoroa", "Onehunga", "Opononi", "Ōpōtiki Wharf", "Opua", "Owenga - Chatham Island", "Paratutae Island", "Picton", "Port Chalmers", "Port Ōhope Wharf", "Port Taranaki", "Pouto Point", "Raglan", "Rangatira Point", "Rangitaiki River Entrance", "Richmond Bay", "Riverton - Aparima", "Scott Base", "Spit Wharf", "Sumner Head", "Tamaki River", "Tarakohe", "Tauranga", "Te Weka Bay", "Thames", "Timaru", "Town Basin", "Waihopai River Entrance", "Waitangi - Chatham Island", "Weiti River Entrance", "Welcombe Bay", "Wellington", "Westport", "Whakatāne", "Whanganui River Entrance", "Whangārei", "Whangaroa", "Whitianga", "Wilson Bay")
+    val portdisplaynames = arrayOf(
+        "Akaroa",
+        "Anakakata Bay",
+        "Anawhata",
+        "Auckland",
+        "Ben Gunn Wharf",
+        "Bluff",
+        "Castlepoint",
+        "Charleston",
+        "Dargaville",
+        "Deep Cove",
+        "Dog Island",
+        "Dunedin",
+        "Elaine Bay",
+        "Elie Bay",
+        "Fishing Rock - Raoul Island",
+        "Flour Cask Bay",
+        "Fresh Water Basin",
+        "Gisborne",
+        "Green Island",
+        "Halfmoon Bay - Oban",
+        "Havelock",
+        "Helensville",
+        "Huruhi Harbour",
+        "Jackson Bay",
+        "Kaikōura",
+        "Kaingaroa - Chatham Island",
+        "Kaiteriteri",
+        "Kaituna River Entrance",
+        "Kawhia",
+        "Korotiti Bay",
+        "Leigh",
+        "Long Island",
+        "Lottin Point - Wakatiri",
+        "Lyttelton",
+        "Mana Marina",
+        "Man o'War Bay",
+        "Manu Bay",
+        "Māpua",
+        "Marsden Point",
+        "Matiatia Bay",
+        "Motuara Island",
+        "Moturiki Island",
+        "Napier",
+        "Nelson",
+        "New Brighton Pier",
+        "North Cape - Otou",
+        "Oamaru",
+        "Ōkukari Bay",
+        "Omaha Bridge",
+        "Ōmokoroa",
+        "Onehunga",
+        "Opononi",
+        "Ōpōtiki Wharf",
+        "Opua",
+        "Owenga - Chatham Island",
+        "Paratutae Island",
+        "Picton",
+        "Port Chalmers",
+        "Port Ōhope Wharf",
+        "Port Taranaki",
+        "Pouto Point",
+        "Raglan",
+        "Rangatira Point",
+        "Rangitaiki River Entrance",
+        "Richmond Bay",
+        "Riverton - Aparima",
+        "Scott Base",
+        "Spit Wharf",
+        "Sumner Head",
+        "Tamaki River",
+        "Tarakohe",
+        "Tauranga",
+        "Te Weka Bay",
+        "Thames",
+        "Timaru",
+        "Town Basin",
+        "Waihopai River Entrance",
+        "Waitangi - Chatham Island",
+        "Weiti River Entrance",
+        "Welcombe Bay",
+        "Wellington",
+        "Westport",
+        "Whakatāne",
+        "Whanganui River Entrance",
+        "Whangārei",
+        "Whangaroa",
+        "Whitianga",
+        "Wilson Bay"
+    )
 
     fun swap(value: Int): Int {
         val b1 = (value shr 0) and 0xff
@@ -76,22 +182,22 @@ class MainActivity : ComponentActivity() {
         return (b1 shl 24) or (b2 shl 16) or (b3 shl 8) or (b4 shl 0)
     }
 
-	fun calc_outstring(port: String): String {
+    fun calc_outstring(port: String): String {
 
-		val am = getAssets();
-		val outstring =  StringBuilder()
+        val am = getAssets();
+        val outstring = StringBuilder()
 
-		val num_rows=8;
-	    val num_cols=34;
-		var t = 0
+        val num_rows = 8;
+        val num_cols = 34;
+        var t = 0
         var told: Int;
-		var h: Float = 0.0F;
-		var hold: Float
-		val now = Date();
-		val nowsecs = (now.getTime()/1000).toInt();
-		val lasttide: Int
-        val graph: Array<Array<Char>> = Array(num_rows){Array(num_cols+1){' '} }
-		//char [][] graph = new char[num_rows][num_cols+1];
+        var h: Float = 0.0F;
+        var hold: Float
+        val now = Date();
+        val nowsecs = (now.getTime() / 1000).toInt();
+        val lasttide: Int
+        val graph: Array<Array<Char>> = Array(num_rows) { Array(num_cols + 1) { ' ' } }
+        //char [][] graph = new char[num_rows][num_cols+1];
 
 
         var stringBuilder = try {
@@ -127,7 +233,7 @@ class MainActivity : ComponentActivity() {
             } else {
 
                 //look thru tidedatfile for current time
-                    while(true){
+                while (true) {
                     t = swap(tidedat.readInt());
                     h = (tidedat.readByte()).toFloat() / 10.0F
                     if (t > nowsecs) {
@@ -158,7 +264,8 @@ class MainActivity : ComponentActivity() {
                 }
 
                 for (k in 0 until num_cols) {
-                    x = (1.0 + ( if (hold > h)  -1 else 1) * Math.sin(k * 2 * Math.PI / (num_cols-1))) / 2.0
+                    x =
+                        (1.0 + (if (hold > h) -1 else 1) * Math.sin(k * 2 * Math.PI / (num_cols - 1))) / 2.0
                     x = ((num_rows - 1) * x + 0.5);
                     graph[x.toInt()][k] = '*';
                     //graph[k%num_rows][k]='*';
@@ -238,17 +345,23 @@ class MainActivity : ComponentActivity() {
                 hightidenext = !hightidenext
                 outstring.append(
                     nformat1.format(hold) + (if (hightidenext)
-                    " H " else " L ")+dformat.format(Date(1000L * told.toLong()))+'\n')
+                        " H " else " L ") + dformat.format(Date(1000L * told.toLong())) + '\n'
+                )
                 hightidenext = !hightidenext
                 outstring.append(
                     nformat1.format(h) + (if (hightidenext)
-                    " H " else " L ")+dformat.format(Date(1000L * told.toLong()))+'\n')
+                        " H " else " L ") + dformat.format(Date(1000L * told.toLong())) + '\n'
+                )
 
                 for (k in 0 until (35 * 4)) { //about a month of tides
                     hightidenext = !hightidenext;
                     t = swap(tidedat.readInt());
                     h = (tidedat.readByte()).toFloat() / 10.0F;
-                    outstring.append(nformat1.format(h) + (if (hightidenext) " H " else " L ")+dformat.format( Date(1000L * t.toLong()))+'\n');
+                    outstring.append(
+                        nformat1.format(h) + (if (hightidenext) " H " else " L ") + dformat.format(
+                            Date(1000L * t.toLong())
+                        ) + '\n'
+                    );
                 }
                 outstring.append("The last tide in this datafile occurs at:\n");
                 outstring.append(dformat.format(Date(1000L * lasttide.toLong())));
@@ -258,22 +371,36 @@ class MainActivity : ComponentActivity() {
             outstring.append("Problem reading tide data\n\n Try selecting the port again, some times the ports available change with and upgrade. If this doesn't work it is either because the tide data is out of date or you've found some bug, try looking for an update.");
         }
         return outstring.toString();
-	}
-
-
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = name,
-        fontFamily = FontFamily.Monospace   )
-}
-
-//@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    NZTidesTheme {
-        Greeting("Android")
     }
+
 }
+
+    @Composable
+    fun MinimalDropdownMenu() {
+        var expanded = false
+        //  var expanded  by remember { mutableStateOf(false) }
+        Box(
+            modifier = Modifier.padding(16.dp)
+        ) {
+            IconButton(onClick = { expanded = !expanded }) {
+                Icon(Icons.Default.MoreVert, contentDescription = "More options")
+            }
+            DropdownMenu(
+                expanded = expanded,
+                onDismissRequest = { expanded = false }
+            ) {
+                DropdownMenuItem(
+                    text = { Text("Option 1") },
+                    onClick = { /* Do something... */ }
+                )
+                DropdownMenuItem(
+                    text = { Text("Option 2") },
+                    onClick = { /* Do something... */ }
+                )
+            }
+        }
+    }
+
+
+
+
