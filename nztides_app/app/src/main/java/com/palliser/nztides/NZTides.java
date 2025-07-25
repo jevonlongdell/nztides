@@ -16,6 +16,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.SubMenu;
+import android.view.ViewGroup;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
@@ -275,7 +276,10 @@ public class NZTides extends Activity {
         tv.setText(outstring);//+now.format2445());
         ScrollView sv = new ScrollView(this);
         sv.addView(tv);
-        setContentView(sv);   
+        setContentView(sv,new ViewGroup.LayoutParams(
+				ViewGroup.LayoutParams.MATCH_PARENT,
+				ViewGroup.LayoutParams.MATCH_PARENT
+		));
     	super.onResume();
     }
 

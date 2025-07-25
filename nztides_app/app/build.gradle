@@ -2,12 +2,12 @@ apply plugin: 'com.android.application'
 
 android {
     namespace 'com.palliser.nztides'
-    compileSdkVersion 33
+    compileSdkVersion 34
 
     defaultConfig {
         applicationId "com.palliser.nztides"
         minSdkVersion 8
-        targetSdkVersion 33
+        targetSdkVersion 34
     }
 
     buildTypes {
