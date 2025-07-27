@@ -71,7 +71,12 @@ public class NZTides extends Activity {
 			SimpleDateFormat dformat = new SimpleDateFormat(
 					"HH:mm E dd/MM/yy zzz");
 
-	    	DataInputStream tidedat = new DataInputStream(am.open(port+".tdat",1));
+		String[] files = am.list("/");
+		String[] lowerCaseFiles = Arrays.stream(files).map(String::toLowerCase).toArray(String[]::new);
+		int indexOfPort = Arrays.asList(lowerCaseFiles).indexOf(port.toLowerCase() + ".tdat");
+		if (indexOfPort == -1) { throw new IOException("port not found even when matched case in use"); }
+		String exactPortFilename = files[indexOfPort];
+	    	DataInputStream tidedat = new DataInputStream(am.open(exactPortFilename,1));
 
 
 			String stationname_tofu = tidedat.readLine(); //stationname with unicode stuff ups
