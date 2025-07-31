@@ -44,6 +44,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -146,6 +147,7 @@ class MainActivity : ComponentActivity() {
         onDismiss: () -> Unit
     ) {
         var tempSelectedPort by remember { mutableStateOf(currentPort) }
+        val coroutineScope = rememberCoroutineScope()
         
         AlertDialog(
             onDismissRequest = onDismiss,
@@ -163,7 +165,7 @@ class MainActivity : ComponentActivity() {
                                 ) { 
                                     tempSelectedPort = port
                                     // Add a small delay to show the highlight before dismissing
-                                    CoroutineScope(Dispatchers.Main).launch {
+                                    coroutineScope.launch {
                                         delay(150) // 150ms delay to show highlight
                                         onPortSelected(port)
                                     }
