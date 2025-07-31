@@ -193,8 +193,6 @@ class MainActivity : ComponentActivity() {
         )
     }
     
-    val currentport: String = "Auckland"
-
     val portdisplaynames = arrayOf(
         "Akaroa",
         "Anakakata Bay",
