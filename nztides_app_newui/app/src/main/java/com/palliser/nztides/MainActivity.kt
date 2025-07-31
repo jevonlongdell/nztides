@@ -7,6 +7,8 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.background
+import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.gestures.Orientation
 import androidx.compose.foundation.gestures.rememberScrollableState
 import androidx.compose.foundation.gestures.scrollable
@@ -21,6 +23,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.MoreVert
@@ -30,6 +33,7 @@ import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -50,6 +54,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.palliser.nztides.ui.theme.NZTidesTheme
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import java.io.DataInputStream
 import java.io.IOException
 import java.text.DecimalFormat
@@ -137,27 +145,41 @@ class MainActivity : ComponentActivity() {
         onPortSelected: (String) -> Unit,
         onDismiss: () -> Unit
     ) {
+        var tempSelectedPort by remember { mutableStateOf(currentPort) }
+        
         AlertDialog(
             onDismissRequest = onDismiss,
             title = { Text("Choose Port") },
             text = {
                 LazyColumn {
                     items(ports) { port ->
+                        val isSelected = port == tempSelectedPort
                         Row(
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .clickable { onPortSelected(port) }
-                                .padding(vertical = 8.dp, horizontal = 16.dp),
+                                .clickable(
+                                    indication = null, // Remove ripple effect
+                                    interactionSource = remember { MutableInteractionSource() }
+                                ) { 
+                                    tempSelectedPort = port
+                                    // Add a small delay to show the highlight before dismissing
+                                    CoroutineScope(Dispatchers.Main).launch {
+                                        delay(150) // 150ms delay to show highlight
+                                        onPortSelected(port)
+                                    }
+                                }
+                                .padding(vertical = 4.dp, horizontal = 16.dp)
+                                .background(
+                                    color = if (isSelected) MaterialTheme.colorScheme.secondaryContainer else Color.Transparent,
+                                    shape = RoundedCornerShape(20.dp)
+                                )
+                                .padding(horizontal = 16.dp, vertical = 12.dp),
                             verticalAlignment = Alignment.CenterVertically
                         ) {
-                            RadioButton(
-                                selected = port == currentPort,
-                                onClick = { onPortSelected(port) }
-                            )
-                            Spacer(modifier = Modifier.width(8.dp))
                             Text(
                                 text = port,
-                                fontSize = 14.sp
+                                fontSize = 14.sp,
+                                color = if (isSelected) MaterialTheme.colorScheme.onSecondaryContainer else MaterialTheme.colorScheme.onSurface
                             )
                         }
                     }
@@ -473,21 +495,36 @@ class MainActivity : ComponentActivity() {
             }
             DropdownMenu(
                 expanded = expanded,
-                onDismissRequest = { expanded = false }
+                onDismissRequest = { expanded = false },
+                modifier = Modifier.width(200.dp) // Make menu wider like in the image
             ) {
                 DropdownMenuItem(
-                    text = { Text("Choose Port") },
+                    text = { 
+                        Text(
+                            "Choose Port",
+                            fontSize = 16.sp,
+                            modifier = Modifier.padding(vertical = 4.dp)
+                        ) 
+                    },
                     onClick = { 
                         expanded = false
                         onChoosePort()
-                    }
+                    },
+                    modifier = Modifier.padding(horizontal = 8.dp)
                 )
                 DropdownMenuItem(
-                    text = { Text("About") },
+                    text = { 
+                        Text(
+                            "About",
+                            fontSize = 16.sp,
+                            modifier = Modifier.padding(vertical = 4.dp)
+                        ) 
+                    },
                     onClick = { 
                         expanded = false
                         onAbout()
-                    }
+                    },
+                    modifier = Modifier.padding(horizontal = 8.dp)
                 )
             }
         }
