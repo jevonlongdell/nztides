@@ -6,25 +6,34 @@ import android.view.Menu
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.gestures.Orientation
 import androidx.compose.foundation.gestures.rememberScrollableState
 import androidx.compose.foundation.gestures.scrollable
 import androidx.compose.foundation.gestures.snapping.rememberSnapFlingBehavior
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
-import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.MoreVert
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
@@ -32,6 +41,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontFamily
@@ -66,6 +76,9 @@ class MainActivity : ComponentActivity() {
 
 
         setContent {
+            var currentPort by remember { mutableStateOf("Auckland") }
+            var showPortDialog by remember { mutableStateOf(false) }
+            
             NZTidesTheme {
                 Scaffold(
                     topBar = {
@@ -77,7 +90,10 @@ class MainActivity : ComponentActivity() {
                                 ) 
                             },
                             actions = {
-                                MinimalDropdownMenu()
+                                MinimalDropdownMenu(
+                                    onChoosePort = { showPortDialog = true },
+                                    onAbout = { /* TODO: Show about dialog */ }
+                                )
                             },
                             colors = TopAppBarDefaults.topAppBarColors(
                                 containerColor = Color.Black,
@@ -90,7 +106,7 @@ class MainActivity : ComponentActivity() {
                 ) { innerPadding ->
                     val scrollState = rememberScrollState()
                     Text(
-                        calc_outstring(currentport),
+                        calc_outstring(currentPort),
                         modifier = Modifier
                             .padding(innerPadding)
                             .verticalScroll(scrollState),
@@ -98,15 +114,63 @@ class MainActivity : ComponentActivity() {
                         fontSize = 13.sp
                     )
                 }
+                
+                if (showPortDialog) {
+                    PortSelectionDialog(
+                        ports = portdisplaynames,
+                        currentPort = currentPort,
+                        onPortSelected = { selectedPort ->
+                            currentPort = selectedPort
+                            showPortDialog = false
+                        },
+                        onDismiss = { showPortDialog = false }
+                    )
+                }
             }
         }
     }
 
-    //override fun onCreateOptionsMenu(menu){
-    //
-    // }
-
-
+    @Composable
+    fun PortSelectionDialog(
+        ports: Array<String>,
+        currentPort: String,
+        onPortSelected: (String) -> Unit,
+        onDismiss: () -> Unit
+    ) {
+        AlertDialog(
+            onDismissRequest = onDismiss,
+            title = { Text("Choose Port") },
+            text = {
+                LazyColumn {
+                    items(ports) { port ->
+                        Row(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .clickable { onPortSelected(port) }
+                                .padding(vertical = 8.dp, horizontal = 16.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            RadioButton(
+                                selected = port == currentPort,
+                                onClick = { onPortSelected(port) }
+                            )
+                            Spacer(modifier = Modifier.width(8.dp))
+                            Text(
+                                text = port,
+                                fontSize = 14.sp
+                            )
+                        }
+                    }
+                }
+            },
+            confirmButton = {
+                TextButton(onClick = onDismiss) {
+                    Text("Cancel")
+                }
+            }
+        )
+    }
+    
     val currentport: String = "Auckland"
 
     val portdisplaynames = arrayOf(
@@ -211,23 +275,22 @@ class MainActivity : ComponentActivity() {
 
     fun calc_outstring(port: String): String {
 
-        val am = getAssets();
+        val am = assets
         val outstring = StringBuilder()
 
         val num_rows = 8;
         val num_cols = 34;
         var t = 0
         var told: Int;
-        var h: Float = 0.0F;
+        var h = 0.0F;
         var hold: Float
         val now = Date();
         val nowsecs = (now.getTime() / 1000).toInt();
-        val lasttide: Int
         val graph: Array<Array<Char>> = Array(num_rows) { Array(num_cols + 1) { ' ' } }
         //char [][] graph = new char[num_rows][num_cols+1];
 
 
-        var stringBuilder = try {
+        try {
 
             val nformat1 = DecimalFormat(" 0.00;-0.00")
             val nformat2 = DecimalFormat("0.00")
@@ -238,12 +301,9 @@ class MainActivity : ComponentActivity() {
             //    	"HH:mm E dd-MM-yyyy zzz");
             val dformat = SimpleDateFormat("HH:mm E dd/MM/yy zzz");
 
-            val tidedat = DataInputStream(am.open(port + ".tdat", 1));
+            val tidedat = DataInputStream(am.open(port + ".tdat"));
 
-
-            val stationname_tofu = tidedat.readLine(); //stationname with unicode stuff ups
-            // byte[] stationnamebytes = stationname_tofu.getBytes(Charset.defaultCharset());
-            //String stationname = new String(stationnamebytes, "UTF-8");
+            tidedat.readLine(); // Skip station name
             //read timestamp for last tide in datafile
             val lasttide = swap(tidedat.readInt());
 
@@ -400,10 +460,11 @@ class MainActivity : ComponentActivity() {
         return outstring.toString();
     }
 
-}
-
     @Composable
-    fun MinimalDropdownMenu() {
+    fun MinimalDropdownMenu(
+        onChoosePort: () -> Unit,
+        onAbout: () -> Unit
+    ) {
         var expanded by remember { mutableStateOf(false) }
         
         Box {
@@ -418,19 +479,20 @@ class MainActivity : ComponentActivity() {
                     text = { Text("Choose Port") },
                     onClick = { 
                         expanded = false
-                        // TODO: Open port selection
+                        onChoosePort()
                     }
                 )
                 DropdownMenuItem(
                     text = { Text("About") },
                     onClick = { 
                         expanded = false
-                        // TODO: Show about dialog
+                        onAbout()
                     }
                 )
             }
         }
     }
+}
 
 
 
