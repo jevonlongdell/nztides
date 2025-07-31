@@ -87,6 +87,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             var currentPort by remember { mutableStateOf("Auckland") }
             var showPortDialog by remember { mutableStateOf(false) }
+            var showAboutDialog by remember { mutableStateOf(false) }
             
             NZTidesTheme {
                 Scaffold(
@@ -101,7 +102,7 @@ class MainActivity : ComponentActivity() {
                             actions = {
                                 MinimalDropdownMenu(
                                     onChoosePort = { showPortDialog = true },
-                                    onAbout = { /* TODO: Show about dialog */ }
+                                    onAbout = { showAboutDialog = true }
                                 )
                             },
                             colors = TopAppBarDefaults.topAppBarColors(
@@ -133,6 +134,12 @@ class MainActivity : ComponentActivity() {
                             showPortDialog = false
                         },
                         onDismiss = { showPortDialog = false }
+                    )
+                }
+                
+                if (showAboutDialog) {
+                    AboutDialog(
+                        onDismiss = { showAboutDialog = false }
                     )
                 }
             }
@@ -190,6 +197,29 @@ class MainActivity : ComponentActivity() {
             confirmButton = {
                 TextButton(onClick = onDismiss) {
                     Text("Cancel")
+                }
+            }
+        )
+    }
+    
+    @Composable
+    fun AboutDialog(
+        onDismiss: () -> Unit
+    ) {
+        AlertDialog(
+            onDismissRequest = onDismiss,
+            title = { Text("About") },
+            text = {
+                val scrollState = rememberScrollState()
+                Text(
+                    text = getString(R.string.AboutString),
+                    modifier = Modifier.verticalScroll(scrollState),
+                    fontSize = 14.sp
+                )
+            },
+            confirmButton = {
+                TextButton(onClick = onDismiss) {
+                    Text("OK")
                 }
             }
         )
