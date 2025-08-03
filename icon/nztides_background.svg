@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="1415.2922"
+   height="1415.2765"
+   viewBox="0 0 1415.2922 1415.2765"
+   sodipodi:docname="nztides_background.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1184">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.79166675;"
+         offset="0.31373629"
+         id="stop1180" />
+      <stop
+         style="stop-color:#3d8a66;stop-opacity:1;"
+         offset="0.55265385"
+         id="stop1182" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1184"
+       id="radialGradient1186"
+       cx="2966.0598"
+       cy="308.38562"
+       fx="2966.0598"
+       fy="308.38562"
+       r="346.47534"
+       gradientTransform="matrix(2.0424141,0,0,2.0423914,-3081.9279,-321.85205)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.5062477"
+     inkscape:cx="760.49728"
+     inkscape:cy="793.09002"
+     inkscape:window-width="2494"
+     inkscape:window-height="1371"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1123" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g8"
+     transform="translate(355.83861,367.05413)" />
+  <g
+     id="g1123"
+     transform="translate(-2268.3484,399.64615)">
+    <rect
+       style="fill:url(#radialGradient1186);fill-opacity:1;stroke:none;stroke-width:2.04241"
+       id="rect1155"
+       width="1415.2922"
+       height="1415.2765"
+       x="2268.3484"
+       y="-399.64615" />
+  </g>
+</svg>
