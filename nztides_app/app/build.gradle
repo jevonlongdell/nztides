@@ -2,12 +2,13 @@ apply plugin: 'com.android.application'
 
 android {
     namespace 'com.palliser.nztides'
-    compileSdkVersion 34
+    compileSdkVersion 36
 
     defaultConfig {
         applicationId "com.palliser.nztides"
-        minSdkVersion 8
-        targetSdkVersion 34
+        minSdkVersion 21
+        targetSdkVersion 36
+       // android.useAndroidX
     }
 
     buildTypes {
@@ -16,4 +17,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+}
+dependencies {
+    implementation 'androidx.activity:activity:1.10.1'
+    implementation 'androidx.activity:activity-compose:1.10.1'
+    //implementation 'androix.activity.compose:1.10.1'
 }
