@@ -12,8 +12,8 @@ android {
         applicationId = "com.palliser.nztides"
         minSdk = 24
         targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 24
+        versionName = "24"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
