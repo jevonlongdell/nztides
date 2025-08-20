@@ -20,10 +20,29 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            // Enable code shrinking/obfuscation for release to reduce APK size
+            isMinifyEnabled = true
+            // Remove unused resources in release
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
+            )
+        }
+    }
+    // Limit packaged language resources to reduce size (adjust if you support more)
+    defaultConfig {
+        resourceConfigurations += listOf("en")
+    }
+
+    packaging {
+        resources {
+            // Drop common license files from dependencies (saves a little space)
+            excludes += listOf(
+                "META-INF/AL2.0",
+                "META-INF/LGPL2.1",
+                "META-INF/LICENSE*",
+                "META-INF/NOTICE*"
             )
         }
     }

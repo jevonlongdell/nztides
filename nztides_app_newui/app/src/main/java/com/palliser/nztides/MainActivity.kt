@@ -321,15 +321,6 @@ class MainActivity : ComponentActivity() {
         "Wilson Bay"
     )
 
-    fun swap(value: Int): Int {
-        val b1 = (value shr 0) and 0xff
-        val b2 = (value shr 8) and 0xff
-        val b3 = (value shr 16) and 0xff
-        val b4 = (value shr 24) and 0xff
-
-        return (b1 shl 24) or (b2 shl 16) or (b3 shl 8) or (b4 shl 0)
-    }
-
     fun calc_outstring(port: String): String {
 
         val am = assets
@@ -362,12 +353,12 @@ class MainActivity : ComponentActivity() {
 
             tidedat.readLine(); // Skip station name
             //read timestamp for last tide in datafile
-            val lasttide = swap(tidedat.readInt());
+            val lasttide = tidedat.readInt();
 
-            //nrecs = swap(tidedat.readInt()); //Number of records in datafile
+            //nrecs = tidedat.readInt(); //Number of records in datafile
             tidedat.readInt(); //Read number of records in datafile
 
-            told = swap(tidedat.readInt());
+            told = tidedat.readInt();
             hold = (tidedat.readByte()).toFloat() / 10.0F
 
             if (told > nowsecs) {
@@ -378,7 +369,7 @@ class MainActivity : ComponentActivity() {
 
                 //look thru tidedatfile for current time
                 while (true) {
-                    t = swap(tidedat.readInt());
+                    t = tidedat.readInt();
                     h = (tidedat.readByte()).toFloat() / 10.0F
                     if (t > nowsecs) {
                         break
@@ -499,7 +490,7 @@ class MainActivity : ComponentActivity() {
 
                 for (k in 0 until (35 * 4)) { //about a month of tides
                     hightidenext = !hightidenext;
-                    t = swap(tidedat.readInt());
+                    t = tidedat.readInt();
                     h = (tidedat.readByte()).toFloat() / 10.0F;
                     outstring.append(
                         nformat1.format(h) + (if (hightidenext) " H " else " L ") + dformat.format(

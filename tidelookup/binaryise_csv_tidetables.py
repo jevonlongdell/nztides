@@ -17,8 +17,15 @@ years = [2025,2026,2027]
 
 nztime = timezone('Pacific/Auckland')
 
+# Calculate current time and one year from now for filtering
+# Start from beginning of today to capture all tides for current day
+today = datetime.datetime.now(nztime).replace(hour=0, minute=0, second=0, microsecond=0)
+one_year_from_now = today + datetime.timedelta(days=365)
+
+print(f"Filtering data from {today.strftime('%Y-%m-%d %H:%M')} to {one_year_from_now.strftime('%Y-%m-%d %H:%M')}")
+
 # Delete all .tdat files in assets directory before downloading new ones
-assets_dir = Path(__file__).parent.parent / 'nztides_app' / 'app' / 'src' / 'main' / 'assets'
+assets_dir = Path(__file__).parent.parent / 'nztides_app_newui' / 'app' / 'src' / 'main' / 'assets'
 for f in assets_dir.glob('*.tdat'):
     if f.is_file():
         f.unlink()
@@ -71,8 +78,11 @@ for port in ports:
                 hr, mn = map(int, f[k].split(':'))
                 ht = float(f[k+1])
                 tm = nztime.localize(datetime.datetime(yr,mon,day,hr,mn,0))
-                times.append(int((tm - datetime.datetime(1970, 1, 1, tzinfo=pytz.utc)).total_seconds()))
-                hts.append(ht)
+                
+                # Only include tides within the next year from current time
+                if today <= tm <= one_year_from_now:
+                    times.append(int(tm.timestamp()))
+                    hts.append(ht)
                 
     #look for daylight savings transition stuffups
     for k in range(1,len(times)):
@@ -88,15 +98,15 @@ for port in ports:
     print(f"writing {port}.dat")
     #first line of tdat file is the port name
     of.write(f'[{port}]\n'.encode('utf-8'))
-    #then an integer representing the date of the last tide
-    of.write(struct.pack('i',times[-1]))
+    #then an integer representing the date of the last tide (big-endian for Java DataInputStream)
+    of.write(struct.pack('>i',times[-1]))
     print("the last time in this datafile will be " + time.asctime(time.localtime(times[-1])))
-    #then an integer representing the number of records
-    of.write(struct.pack('i',len(hts)))
+    #then an integer representing the number of records (big-endian for Java DataInputStream)
+    of.write(struct.pack('>i',len(hts)))
     print(f" the number of tide records is {len(hts)}, which is about {len(hts)/(4.0*365):g} years worth")
     #then for each record an integer valued time and a byte representing the height in decimeters
     for k in range(len(hts)):
-        of.write(struct.pack('ib',times[k],int(round(hts[k]*10))))
+        of.write(struct.pack('>ib',times[k],int(round(hts[k]*10))))
     of.close()
     print("-------------------------------")
         

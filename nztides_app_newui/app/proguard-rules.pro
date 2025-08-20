@@ -19,3 +19,25 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# --- R8/ProGuard rules to work well with Kotlin and Jetpack Compose ---
+# Keep Kotlin metadata so reflection and some tooling work
+-keep class kotlin.Metadata { *; }
+
+# Keep Compose runtime internals that are accessed via reflection
+-dontwarn kotlin.**
+-dontwarn kotlinx.coroutines.**
+
+# Keep Parcelable creators
+-keepclassmembers class * implements android.os.Parcelable {
+	public static final android.os.Parcelable$Creator CREATOR;
+}
+
+# Keep enums values() and valueOf()
+-keepclassmembers enum * {
+	public static **[] values();
+	public static ** valueOf(java.lang.String);
+}
+
+# Optional: keep your app's entry points
+-keep class com.palliser.nztides.** { *; }
