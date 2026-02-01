@@ -79,8 +79,11 @@ class MainActivity : ComponentActivity() {
 
     //@Composable
     @OptIn(ExperimentalMaterial3Api::class)
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    //override fun onCreate(savedInstanceState: Bundle?) {
+    //    super.onCreate(savedInstanceState)
+
+    override fun onStart() {
+            super.onStart()
         enableEdgeToEdge()
 
 
