@@ -487,9 +487,10 @@ class MainActivity : ComponentActivity() {
                         " H " else " L ") + dformat.format(Date(1000L * told.toLong())) + '\n'
                 )
                 hightidenext = !hightidenext
+
                 outstring.append(
                     nformat1.format(h) + (if (hightidenext)
-                        " H " else " L ") + dformat.format(Date(1000L * told.toLong())) + '\n'
+                        " H " else " L ") + dformat.format(Date(1000L * t.toLong())) + '\n'
                 )
 
                 for (k in 0 until (35 * 4)) { //about a month of tides
